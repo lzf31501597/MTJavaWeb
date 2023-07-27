@@ -1,6 +1,6 @@
 package javaTest.array;
 
-import java.lang.reflect.Array;
+
 
 public class Array01 {
 
