@@ -1,6 +1,9 @@
 package javaTest.objectt;
 
+import java.util.Scanner;
+
 public class Finalize01 {
+
 
 	//1) 当对象被回收时，系统自动调用该对象的finalize方法。子类可以重写该方法，做一些释放资源的操作【演示】
 	//2) 什么时候被回收:当某个对象没有任何引用时，则jvm就认为这个对象是一个垃圾对象，
@@ -17,7 +20,11 @@ public class Finalize01 {
 		//,如果程序员重写了 finalize, 就可以实现自己的逻辑
 		bmw = null;
 		System.gc();//主动调用垃圾回收器  
-		System.out.println("程序推出了。。。。。。。。"); 
+		System.out.println("程序推出了。。。。。。。。");
+
+		Scanner scanner = new Scanner(System.in);
+
+
 	}
 
 }
