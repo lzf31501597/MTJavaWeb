@@ -28,7 +28,7 @@ public class Account {
 	}
 	
 	public void setName(String name) {
-		if(name.length() >= 2 && name.length() <= ６) {
+		if(name.length() >= 2 && name.length() <= 6) {
 			this.name = name;
 		} else {
 			System.out.println("姓名：长度为2位 3位或4位，默认无名");

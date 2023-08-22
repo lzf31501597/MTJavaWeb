@@ -133,7 +133,7 @@ public class SmallChangerSysOOP {
 		//拼接消费信息到details
 		date = new Date();//获取当前日期
 		
-	    details +=  "\n" + note + "：\t-" + money + "\t" + sdf.format(date) + "\t" + balance;
+	    details +=  "\n消费:" + note + ":\t-" + money + "\t" + sdf.format(date) + "\t" + balance;
 	}	
 	
 	// 5) 退出

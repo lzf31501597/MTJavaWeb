@@ -4,8 +4,6 @@ public class BankAccount {
 	
 	private int balance;
 
-	
-	
 	public BankAccount(int balance) {
 		//super();
 		this.balance = balance;
