@@ -47,14 +47,22 @@ public class Docker {
 	}
 	
 	public boolean equals(Object obj) {
-		Docker docker = (Docker) obj;
-		
-		if(this.equals(docker)) {
+
+		if(this == obj) {
 			return true;
-		}else {
-			return false;
 		}
-		
+
+		if (obj instanceof Docker) {
+			Docker docker = (Docker) obj;
+			return this.name.equals(docker.name) && this.age == docker.age && this.job.equals(docker.job) && this.gender == docker.gender && this.sal.equals(docker
+					.sal);
+		}
+
+		return false;
+
+
+
+
 		
 	}
 	
