@@ -18,8 +18,8 @@ public class Teacher extends Person{
 
     @Override
     public String show() {
-        return "老师=" + super.getName() + " ,sex=" + super.getSex() + " ,age=" + super.getAge() +
-                " ,work_age=" + this.work_age;
+        return "老师的信息：\n姓名：" + super.getName() + "\nsex：" + super.getSex() + "\nage：" + super.getAge() +
+                "\nwork_age：" + this.work_age;
     }
 
     @Override

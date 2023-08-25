@@ -4,6 +4,10 @@ public class Scientist extends Employee {
 	
 	private double bonus;
 
+	public Scientist(String name, double slaray) {
+		super(name, slaray);
+	}
+
 	public double getBonus() {
 		return bonus;
 	}
@@ -12,13 +16,9 @@ public class Scientist extends Employee {
 		this.bonus = bonus;
 	}
 
-	public Scientist(String name, double slaray, double bonus) {
-		super(name, slaray);
-		this.bonus = bonus;
-	}
-
 	public String printSalary() {
-		return "科学家："+ super.getName() +",工资:" + (super.getSlaray()+this.bonus) ;
+		return "科学家："+ super.getName() +",工资:" + (super.getSlaray() * super.getSlaMonth()
+		 +this.bonus) ;
 		
 				
 	}

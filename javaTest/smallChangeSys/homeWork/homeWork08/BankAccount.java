@@ -2,13 +2,19 @@ package javaTest.smallChangeSys.homeWork.homeWork08;
 
 public class BankAccount {
 	
-	private int balance;
+	private double balance;
 
-	public BankAccount(int balance) {
+	public BankAccount(double balance) {
 		//super();
 		this.balance = balance;
 	}
+	public double getBalance() {
+		return balance;
+	}
 
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 	public void deposit(double amount) {
 		balance += amount;
 	}
@@ -17,13 +23,7 @@ public class BankAccount {
 		balance -= amount;
 	}
 
-	public int getBalance() {
-		return balance;
-	}
-	
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
+
 	
 	
 	

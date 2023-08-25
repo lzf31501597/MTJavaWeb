@@ -18,8 +18,8 @@ public class Student extends Person{
 
     @Override
     public String show() {
-        return  "学生=" + super.getName() + " ,sex=" + super.getSex() + " ,age=" + super.getAge() +
-                " ,stu_id=" + this.stu_id;
+        return  "学生信息：\n姓名：" + super.getName() + "\nsex：" + super.getSex() + "\nage：" + super.getAge() +
+                "\nstu_id：" + this.stu_id;
     }
 
     @Override

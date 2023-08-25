@@ -47,21 +47,26 @@ public class Docker {
 	}
 	
 	public boolean equals(Object obj) {
-
+		//判断两个比较对象是否相同
 		if(this == obj) {
 			return true;
 		}
+		//判断obj是否是Docker类型或子类
+		//过关斩将 校验方式
+//		if (obj instanceof Docker) {
+//			Docker docker = (Docker) obj;
+//			return this.name.equals(docker.name) && this.age == docker.age && this.job.equals(docker.job) &&
+//					this.gender == docker.gender && this.sal == docker.sal;
+//		}
+//
+//		return false;
 
-		if (obj instanceof Docker) {
-			Docker docker = (Docker) obj;
-			return this.name.equals(docker.name) && this.age == docker.age && this.job.equals(docker.job) && this.gender == docker.gender && this.sal.equals(docker
-					.sal);
+		if (!(obj instanceof Docker)) {
+			return false;
 		}
-
-		return false;
-
-
-
+		Docker docker = (Docker) obj;
+			return this.name.equals(docker.name) && this.age == docker.age && this.job.equals(docker.job) &&
+	  				this.gender == docker.gender && this.sal == docker.sal;
 
 		
 	}

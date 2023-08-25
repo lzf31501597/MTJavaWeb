@@ -3,7 +3,7 @@ package javaTest.smallChangeSys.homeWork.homeWork09;
 public class LabeledPoint extends Point {
 
 
-	String labeled;
+	private String labeled;
 
 	public LabeledPoint(String labeled, double x, double y) {
 		super(x, y);
@@ -12,7 +12,6 @@ public class LabeledPoint extends Point {
 
 	@Override
 	public String printPoint() {
-		// TODO Auto-generated method stub
 		return this.labeled +", "+ super.printPoint() ;
 	}
 	

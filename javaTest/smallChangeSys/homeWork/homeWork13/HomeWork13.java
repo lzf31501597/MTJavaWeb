@@ -8,6 +8,16 @@ public class HomeWork13 {
         person[2] = new Teacher("james", '女',45,4  );
         person[3] = new Teacher("jake", '男',50, 3 );
 
+//        for (int i = 0; i < 4; i++) {
+//            System.out.println(person[i].toString().toString().toString());
+//        }
+        new HomeWork13().sortAge(person);
+        new HomeWork13().isPerson(person);
+
+
+    }
+
+    public void sortAge(Person[] person){
         for (int i = 0; i < person.length; i++) {
             for (int j = 0; j < person.length - 1 - i; j++) {
                 if (person[j].getAge() < person[j + 1].getAge()) {
@@ -18,24 +28,27 @@ public class HomeWork13 {
             }
 
         }
-
+        System.out.println("根据年龄排序：-------------");
         for (int i = 0; i < person.length; i++) {
             System.out.println(person[i].getAge());
         }
-
+    }
+    public void isPerson(Person[] person){
+        System.out.println("-----------------------");
         for (int i = 0; i < 4; i++) {
             if (person[i] instanceof Student){
                 Student student = (Student) person[i];
                 System.out.println(student.show());
-                student.paly();
+                System.out.println(student.paly());
                 student.study();
+                System.out.println("-----------------");
             } else if (person[i] instanceof Teacher) {
                 Teacher teacher = (Teacher) person[i];
                 System.out.println(teacher.show());
-                teacher.paly();
+                System.out.println(teacher.paly());
                 teacher.teach();
+                System.out.println("-----------------");
             }
         }
-
     }
 }

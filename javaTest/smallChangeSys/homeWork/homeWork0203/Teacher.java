@@ -6,15 +6,24 @@ public class Teacher {
 	private int age;
 	private String post;
 	private double salary;
+	//工资级别
+	private double grade;
 	
-	public Teacher(String name, int age, String post, double salary) {
+	public Teacher(String name, int age, String post, double salary, double grade) {
 		//super();
 		this.name = name;
 		this.age = age;
 		this.post = post;
 		this.salary = salary;
+		this.grade = grade;
 	}
-	
+	public double getGrade() {
+		return grade;
+	}
+
+	public void setGrade(double grade) {
+		this.grade = grade;
+	}
 	public String getName() {
 		return name;
 	}
@@ -41,7 +50,8 @@ public class Teacher {
 	}
 	
 	public String introduce() {
-		return "教师："+name+"，年龄："+age+"，职称："+post+"，基本工资："+salary;
+		return "教师："+name+"，年龄："+age+"，职称："+post+"，基本工资："+salary+", 工资级别:"+grade;
+
 		
 	}
 	

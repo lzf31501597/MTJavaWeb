@@ -15,10 +15,10 @@ class Student extends Person {
         System.out.println("student run()");
     }
 
-    @Override
-    public void eat() {
-        System.out.println("student eat()");
-    }
+//    @Override
+//    public void eat() {
+//        System.out.println("student eat()");
+//    }
 
     public void study(){
         System.out.println("student study()");

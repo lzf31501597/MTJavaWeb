@@ -20,8 +20,9 @@ public class Son extends Father {
 		this.g1();
 		id = this.id;//this能访问父类的默认属性id和f1（），不能访问私有属性的score
 		this.f1();
-		//this能访问本类默认属性name和g1（）
+		//this能访问本类默认属性name和g1（）show();
 		name = this.name;
 		this.g1();
+		this.show();
 	}
 }

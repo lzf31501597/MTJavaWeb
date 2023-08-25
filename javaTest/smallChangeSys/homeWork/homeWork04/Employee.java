@@ -5,13 +5,19 @@ public class Employee {
 	private String name;
 	private double daySlaray;
 	private int dayCount;
+
+
+
+	private double grade;
+
 	
 	
-	public Employee(String name, double daySlaray, int dayCount) {
+	public Employee(String name, double daySlaray, int dayCount, double grade) {
 		super();
 		this.name = name;
 		this.daySlaray = daySlaray;
 		this.dayCount = dayCount;
+		this.grade = grade;
 	}
 
 
@@ -43,10 +49,16 @@ public class Employee {
 	public void setDayCount(int dayCount) {
 		this.dayCount = dayCount;
 	}
+	public double getGrade() {
+		return grade;
+	}
 
+	public void setGrade(double grade) {
+		this.grade = grade;
+	}
 
 	public String printSalary() {
-		return "姓名："+ name +",工资:" + dayCount * daySlaray ;
+		return "姓名："+ name +",工资:" + dayCount * daySlaray * grade ;
 		
 				
 	}

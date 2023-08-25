@@ -4,14 +4,13 @@ public class Employee {
 
 	private String name;
 	private double slaray;
-	
-	
+	private int slaMonth = 12;
+
+
 	public Employee(String name, double slaray) {
-		//super();
 		this.name = name;
 		this.slaray = slaray;
 	}
-
 
 	public String getName() {
 		return name;
@@ -32,9 +31,17 @@ public class Employee {
 		this.slaray = slaray;
 	}
 
+	public int getSlaMonth() {
+		return slaMonth;
+	}
+
+	public void setSlaMonth(int slaMonth) {
+		this.slaMonth = slaMonth;
+	}
+
 
 	public String printSalary() {
-		return "姓名："+ name +",工资:" + slaray;
+		return "姓名："+ name +",工资:" + slaray * slaMonth;
 				
 	}
 
