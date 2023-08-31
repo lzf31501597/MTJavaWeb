@@ -1,14 +1,14 @@
-package javaTest.roomsToLetSystem;
+package javaTest.houseRentSystem.domain;
 
 public class House {
     private int houseNuM;
     private String name;
-    private long telnumber;
+    private String telnumber;
     private String adress;
     private double monthRent;
     private String statusHouse;
 
-    public House(int houseNuM, String name, long telnumber, String adress, double monthRent, String statusHouse) {
+    public House(int houseNuM, String name, String telnumber, String adress, double monthRent, String statusHouse) {
         this.houseNuM = houseNuM;
         this.name = name;
         this.telnumber = telnumber;
@@ -34,11 +34,11 @@ public class House {
         this.name = name;
     }
 
-    public long getTelnumber() {
+    public String getTelnumber() {
         return telnumber;
     }
 
-    public void setTelnumber(long telnumber) {
+    public void setTelnumber(String telnumber) {
         this.telnumber = telnumber;
     }
 
@@ -68,8 +68,12 @@ public class House {
 
     public String printHouseInfo(){
 
-        return houseNuM + "\t" + name + "\t" +telnumber + "\t" +adress + "\t" + monthRent
-                + "\t" + statusHouse;
+        return houseNuM +
+                "\t" + name +
+                "\t" + telnumber +
+                "\t" + adress +
+                "\t" + monthRent +
+                "\t" + statusHouse;
     }
 
 }
