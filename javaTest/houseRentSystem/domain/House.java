@@ -66,12 +66,13 @@ public class House {
         this.statusHouse = statusHouse;
     }
 
-    public String printHouseInfo(){
+    @Override
+    public String toString(){
 
         return houseNuM +
-                "\t" + name +
+                "\t\t" + name +
                 "\t" + telnumber +
-                "\t" + adress +
+                "\t\t" + adress +
                 "\t" + monthRent +
                 "\t" + statusHouse;
     }
