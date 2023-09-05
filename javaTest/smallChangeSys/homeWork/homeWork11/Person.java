@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork11;
+package com.javaTest.smallChangeSys.homeWork.homeWork11;
 
 public class Person {
     public void run(){

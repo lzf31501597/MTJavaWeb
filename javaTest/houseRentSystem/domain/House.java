@@ -1,4 +1,4 @@
-package javaTest.houseRentSystem.domain;
+package com.javaTest.houseRentSystem.domain;
 
 public class House {
     private int houseNuM;

@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork;
+package com.javaTest.smallChangeSys.homeWork;
 
 public class HomeWork12 {
     //名称      概念          用于基本类型              用于引用类型

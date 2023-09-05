@@ -1,8 +1,8 @@
-package javaTest.houseRentSystem.view;
+package com.javaTest.houseRentSystem.view;
 
-import javaTest.houseRentSystem.domain.House;
-import javaTest.houseRentSystem.service.HouseService;
-import javaTest.houseRentSystem.utils.Utility;
+import com.javaTest.houseRentSystem.domain.House;
+import com.javaTest.houseRentSystem.service.HouseService;
+import com.javaTest.houseRentSystem.utils.Utility;
 
 public class HouseView {
 

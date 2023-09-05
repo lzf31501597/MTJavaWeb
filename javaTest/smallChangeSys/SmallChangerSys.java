@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys;
+package com.javaTest.smallChangeSys;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

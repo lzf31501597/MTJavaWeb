@@ -1,4 +1,4 @@
-package javaTest.houseRentSystem.utils;
+package com.javaTest.houseRentSystem.utils;
 
 
 /**

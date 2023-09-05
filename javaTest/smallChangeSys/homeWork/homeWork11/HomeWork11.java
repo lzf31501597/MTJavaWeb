@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork11;
+package com.javaTest.smallChangeSys.homeWork.homeWork11;
 
 public class HomeWork11 {
     public static void main(String[] args) {

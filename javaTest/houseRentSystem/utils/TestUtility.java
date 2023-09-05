@@ -1,4 +1,4 @@
-package javaTest.houseRentSystem.utils;
+package com.javaTest.houseRentSystem.utils;
 
 public class TestUtility {
     public static void main(String[] args) {

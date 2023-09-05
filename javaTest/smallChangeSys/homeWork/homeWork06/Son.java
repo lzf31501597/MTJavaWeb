@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork06;
+package com.javaTest.smallChangeSys.homeWork.homeWork06;
 
 public class Son extends Father {
 

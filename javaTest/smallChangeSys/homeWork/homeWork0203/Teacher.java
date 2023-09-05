@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork0203;
+package com.javaTest.smallChangeSys.homeWork.homeWork0203;
 
 public class Teacher {
 

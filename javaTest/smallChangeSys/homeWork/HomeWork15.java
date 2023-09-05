@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork;
+package com.javaTest.smallChangeSys.homeWork;
 
 public class HomeWork15 {
     //15,什么事多态，多态具体体现有哪些？

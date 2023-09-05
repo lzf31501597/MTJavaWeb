@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork09;
+package com.javaTest.smallChangeSys.homeWork.homeWork09;
 
 public class Point {
 	

@@ -1,6 +1,6 @@
-package javaTest.houseRentSystem.service;
+package com.javaTest.houseRentSystem.service;
 
-import javaTest.houseRentSystem.domain.House;
+import com.javaTest.houseRentSystem.domain.House;
 /*
 *
 */

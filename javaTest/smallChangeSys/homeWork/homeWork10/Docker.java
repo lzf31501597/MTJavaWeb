@@ -1,4 +1,4 @@
-package javaTest.smallChangeSys.homeWork.homeWork10;
+package com.javaTest.smallChangeSys.homeWork.homeWork10;
 
 public class Docker {
 	

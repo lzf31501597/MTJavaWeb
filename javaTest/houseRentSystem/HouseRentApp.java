@@ -1,6 +1,6 @@
-package javaTest.houseRentSystem;
+package com.javaTest.houseRentSystem;
 
-import javaTest.houseRentSystem.view.HouseView;
+import com.javaTest.houseRentSystem.view.HouseView;
 
 public class HouseRentApp {
 
