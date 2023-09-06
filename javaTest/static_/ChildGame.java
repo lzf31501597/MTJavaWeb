@@ -24,6 +24,9 @@ public class ChildGame {
 
     }
 }
+    //static变量是对象共享，不管在哪里：
+    //（1）static变量：是同一个类的所有对象共享的
+    //（2）static变量：在类加载的时候就生成了
 class Child{
     private String name;
     //定义一个count变量，是一个类变量（静态变量）static 静态
