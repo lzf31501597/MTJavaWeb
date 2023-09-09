@@ -34,7 +34,7 @@ class D extends C{
 }
 
 /*
- * 3、当不希望类的某个属性值被修改，可以用final修饰
+ * 4、当不希望某个局部变量被修改，可以用final修饰
  * */
 class  E {
     public final double TAX_RATE = 0.08;
@@ -46,7 +46,7 @@ class  E {
  * */
 class F {
     public void cry(){
-        final double NUM = 0.01; //NUM为局部变量
+        final double NUM = 0.01;
         //NUM = 0.9;
         System.out.println("NUM=" + NUM);
     }
