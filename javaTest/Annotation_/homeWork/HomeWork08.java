@@ -2,7 +2,50 @@ package com.javaTest.Annotation_.homeWork;
 
 public class HomeWork08 {
     public static void main(String[] args) {
+        Color[] colors = Color.values();
+        for (Color color: colors) {
+            color.show();
+            switch (color){
+                case RED:
+                    System.out.println("RED(255,0,0)");
+                    break;
+                case BLUE:
+                    System.out.println("BLUE(0,0,255)");
+                    break;
+                case BLACK:
+                    System.out.println("BLACK(0,0,0)");
+                    break;
+                case YELLOW:
+                    System.out.println("YELLOW(255,255,0)");
+                    break;
+                case GREEN:
+                    System.out.println("GREEN(0,255,0)");
+                    break;
+            }
+        }
+        //System.out.println(Color.show());
 
+        for(Color colorr: colors){
+            switch (colorr){
+                case RED:
+                    System.out.println("RED(255,0,0)");
+                    break;
+                case BLUE:
+                    System.out.println("BLUE(0,0,255)");
+                    break;
+                case BLACK:
+                    System.out.println("BLACK(0,0,0)");
+                    break;
+                case YELLOW:
+                    System.out.println("YELLOW(255,255,0)");
+                    break;
+                case GREEN:
+                    System.out.println("GREEN(0,255,0)");
+                    break;
+            }
+
+
+        }
     }
 }
 interface IColor{
@@ -16,6 +59,8 @@ enum Color implements IColor{
     private int greenValue;
     private int blueValue;
 
+    private Color() {
+    }
 
     private Color(int redValue, int greenValue, int blueValue) {
         this.redValue = redValue;
@@ -43,12 +88,10 @@ enum Color implements IColor{
                 ", blueValue=" + blueValue +
                 '}';
     }
-
+    
     @Override
     public void show() {
-        Color[] colors = Color.;
-        for(Color color: colors){
-            System.out.println(color);
-        }
+        System.out.println("三色值：" + redValue + " ," + greenValue + " ," + blueValue);
+
     }
 }
