@@ -6,7 +6,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class HashSet02 {
+    @SuppressWarnings("all")
     public static void main(String[] args) {
+        //1.在执行add方法后，会返回一个boolean值
+        //2.如果添加成功，返回true，否则返回false
+        //3.可以通过 remove 制定删除哪个对象
         Set set = new HashSet();
         System.out.println(set.add("john"));//t
         System.out.println(set.add("lucy"));//t
@@ -15,9 +19,9 @@ public class HashSet02 {
         System.out.println(set.add("hsp"));//t
         System.out.println(set.add("mary"));//t
 
-        set.remove("john");
         System.out.println("set=" + set);
 
+        set.remove("john");
         set = new HashSet();
         System.out.println("set=" + set);
         set.add("lucy");

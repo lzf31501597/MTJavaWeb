@@ -107,4 +107,45 @@ public class LinkedListCURD {
             System.out.println("for (int i) " + linkedList.get(i));
         }
     }
+    /**删除节点
+     * 1.执行 removeFirst();
+     * public E remove() {
+     *         return removeFirst();
+     *     }
+     * 2.执行 removeFirst()
+     * public E removeFirst() {
+     *         final Node<E> f = first;
+     *         if (f == null)
+     *             throw new NoSuchElementException();
+     *         return unlinkFirst(f);
+     *     }
+     * 3. 执行 unlinkFirst(f);
+     * private E unlinkFirst(Node<E> f) {
+     *         // assert f == first && f != null;
+     *         final E element = f.item;
+     *         final Node<E> next = f.next;
+     *         f.item = null;
+     *         f.next = null; // help GC
+     *         first = next;
+     *         if (next == null)
+     *             last = null;
+     *         else
+     *             next.prev = null;
+     *         size--;
+     *         modCount++;
+     *         return element;
+     *     }
+     * */
+
+    /** ArrayList 和 LinkeList 的比较
+     *             底层结构        增删的效率          改查的效率
+     *  ArrayList   可变的数组      较低，数组扩容      较高
+     *  LinkeList   双向链表        较高，通过链表追加   较低
+     *
+     *  1.如果我们改查的操作多，选择 ArrayList
+     *  2.如果我们增删的操作多，选择 LinkeList
+     *  3.一般情况，在程序当中，80--90%都是查询，因此大部分情况下会选择 ArrayList
+     *  4.在一个项目中，根据业务灵活选择，也可能是这样，一个模块使用的ArrayList，另一模块使用的是 LinkeList，
+     *      也就是说，要根据业务来进行选择
+     * **/
 }

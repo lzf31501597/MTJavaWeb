@@ -22,17 +22,19 @@ public class Map01 {
         map.put("no1", "韩顺平");//k-v
         map.put("no2", "张无忌");//k-v
         map.put("no1", "张三丰");//当有相同的 k , 就等价于替换.
-        map.put("no3", "张三丰");//k-v
-        map.put(null, null); //k-v
-        map.put(null, "abc"); //等价替换
-        map.put("no4", null); //k-v
-        map.put("no5", null); //k-v
-        map.put(1, "赵敏");//k-v
-        map.put(new Object(), "金毛狮王");//k-v
+//        map.put("no3", "张三丰");//k-v
+//        map.put(null, null); //k-v
+//        map.put(null, "abc"); //等价替换
+//        map.put("no4", null); //k-v
+//        map.put("no5", null); //k-v
+//        map.put(1, "赵敏");//k-v
+//        map.put(new Object(), "金毛狮王");//k-v
 
         // 通过 get 方法，传入 key ,会返回对应的 value
         System.out.println(map.get("no2"));
 
         System.out.println(map);
+
+
     }
 }

@@ -18,12 +18,16 @@ public class ListMethod {
         List list2 = new ArrayList();
         list2.add("jack");
         list2.add("tom");
+        list2.add("jack");
+        list2.add("tom");
         list.addAll(1, list2);
         System.out.println("list=" + list);
 
         //Object get(int index):获取指定 index 位置的元素
+        System.out.println(list.get(3));
         //int indexOf(Object obj):返回 obj 在集合中首次出现的位置
         System.out.println(list.indexOf("tom"));//2
+        System.out.println(list.lastIndexOf("tom"));
 
         //int lastIndexOf(Object obj):返回 obj 在当前集合中末次出现的位置
         list.add("韩顺平");

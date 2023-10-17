@@ -8,8 +8,10 @@ public class SetMethod {
     public static void main(String[] args) {
         //1. 以 Set 接口的实现类 HashSet 来讲解 Set 接口的方法
         //2. set 接口的实现类的对象(Set 接口对象), 不能存放重复的元素, 可以添加一个 null
-        //3. set 接口对象存放数据是无序(即添加的顺序和取出的顺序不一致)
-        //4. 注意:取出的顺序虽然不是添加的顺序，但是他的固定.
+        //3. set 接口对象存放数据是无序
+        // HashSet不保证元素是有序的，取决于Hash后，再确定索引的结果。(即，不保证添加的顺序和取出的顺序一致)
+        //4.不能有重复元素/对象。
+        // 注意:取出的顺序虽然不是添加的顺序，但是它是固定.
         Set set = new HashSet();
         set.add("john");
         set.add("lucy");
