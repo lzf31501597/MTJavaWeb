@@ -13,6 +13,9 @@ public class HashSet01 {
      2. HashSet 可以存放 null ,但是只能有一个 null,即元素不能重复
     * */
     public static void main(String[] args) {
+        //1. 在执行 add 方法后，会返回一个 boolean 值
+        //2. 如果添加成功，返回 true, 否则返回 false
+        //3. 可以通过 remove 指定删除哪个对象
         Set set = new HashSet();
         System.out.println(set.add("john"));//t
         System.out.println(set.add("lucy"));//t

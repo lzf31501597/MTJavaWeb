@@ -15,6 +15,7 @@ public class SetStructure {
         Node jack = new Node("jack", null);
         john.next = jack;
         System.out.println(nodes);
+
         Node rose = new Node("Rose", null);
         jack.next = rose;
         System.out.println(nodes);

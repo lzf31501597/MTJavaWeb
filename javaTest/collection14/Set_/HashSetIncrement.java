@@ -11,11 +11,11 @@ public class HashSetIncrement {
     * */
     public static void main(String[] args) {
         HashSet hashSet = new HashSet();
-//        for (int i = 1; i < 100; i++) {
-//            hashSet.add(i);
-//        }
-//
-//        System.out.println("hashSet=" + hashSet);
+        for (int i = 1; i < 100; i++) {
+            hashSet.add(i);
+        }
+
+        System.out.println("hashSet=" + hashSet);
 
         /*
         在 Java8 中, 如果一条链表的元素个数到达 TREEIFY_THRESHOLD(默认是 8 )，
@@ -30,10 +30,10 @@ public class HashSetIncrement {
         当我们向 hashset 增加一个元素，-> Node -> 加入 table , 就算是增加了一个 size++
         */
 
-        for (int i = 1; i < 12; i++) {
-            hashSet.add(new A(i));
-        }
-        System.out.println("hashSet=" + hashSet);
+//        for (int i = 1; i < 12; i++) {
+//            hashSet.add(new A(i));
+//        }
+//        System.out.println("hashSet=" + hashSet);
 //        for (int i = 1; i < 7; i++) {
 //            hashSet.add(new BB(i));
 //        }

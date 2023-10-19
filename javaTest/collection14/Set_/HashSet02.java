@@ -24,7 +24,7 @@ public class HashSet02 {
         set.remove("john");
         set = new HashSet();
         System.out.println("set=" + set);
-        set.add("lucy");
+        set.add("lucy");//添加成功
         set.add("lucy");//添加不成功
         set.add(new Dog("tom"));//添加了一个dog对象
         set.add(new Dog("tom"));//添加了一个dog对象

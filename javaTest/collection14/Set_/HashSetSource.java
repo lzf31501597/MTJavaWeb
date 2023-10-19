@@ -34,7 +34,8 @@ public class HashSetSource {
         if ((tab = table) == null || (n = tab.length) == 0)
             n = (tab = resize()).length;
 
-        //(1)根据 key，得到 hash 去计算该 key 应该存放到 table 表的哪个索引位置 //并把这个位置的对象，赋给 p
+        //(1)根据 key，得到 hash 去计算该 key 应该存放到 table 表的哪个索引位置
+        //  并把这个位置的对象，赋给 p
         //(2)判断 p 是否为 null
         //(2.1) 如果 p 为 null, 表示还没有存放元素, 就创建一个 Node (key="java",value=PRESENT)
         //(2.2) 就放在该位置 tab[i] = newNode(hash, key, value, null)
@@ -60,13 +61,13 @@ public class HashSetSource {
                 e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
             else {//如果 table 对应索引位置，已经是一个链表, 就使用 for 循环比较
                 //(1) 依次和该链表的每一个元素比较后，都不相同, 则加入到该链表的最后
-                // 注意在把元素添加到链表后，立即判断 该链表是否已经达到 8 个结点
-                // , 就调用 treeifyBin() 对当前这个链表进行树化(转成红黑树)
-                // 注意，在转成红黑树时，要进行判断, 判断条件
-                // if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY(64))
-                // resize();
-                // 如果上面条件成立，先 table 扩容.
-                // 只有上面条件不成立时，才进行转成红黑树
+                //  注意在把元素添加到链表后，立即判断 该链表是否已经达到 8 个结点
+                //  , 就调用 treeifyBin() 对当前这个链表进行树化(转成红黑树)
+                //  注意，在转成红黑树时，要进行判断, 判断条件
+                //  if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY(64))
+                //  resize();
+                //  如果上面条件成立，先 table 扩容.
+                //  只有上面条件不成立时，才进行转成红黑树
                 //(2) 依次和该链表的每一个元素比较过程中，如果有相同情况,就直接 break
 
                 for (int binCount = 0; ; ++binCount) {
