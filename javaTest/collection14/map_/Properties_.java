@@ -13,7 +13,7 @@ public class Properties_ {
         Properties properties = new Properties();
         //添加数据
         properties.put("john", 100);
-        properties.put("tom", 100);
+        properties.put("lucy", 100);
         properties.put("lic", 100);
         properties.put("lic", 88);
         //properties.put(null, 100);//异常 NullPointerExercise
