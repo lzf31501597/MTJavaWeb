@@ -9,18 +9,20 @@ import java.util.Vector;
 public class MyPanel extends JPanel implements KeyListener {
     //定义我的坦克
     HeroTank tank = null;
+
     //定义敌人的坦克,考虑多线程问题，降低人坦克放入 集合Vector
     Vector<EnemyTank> enemyTanks = new Vector<>();
     int enemyTankSize = 3;
     public MyPanel() {//初始化坦克
         tank = new HeroTank(100, 100);
-        //tank.setSpeed(10);//初始化坦克移动速度
+        tank.setSpeed(5);//初始化坦克移动速度
         //初始化敌人的坦克
         for (int i = 0; i < enemyTankSize; i++) {
             //enemyTanks.add(new EnemyTank(100 *(i + 1), 0));
             //创建一个敌人的坦克
             EnemyTank enemyTank = new EnemyTank(100 * (i + 1), 0);
             enemyTank.setDirect(2);//设置敌人坦克的方向
+            enemyTank.setSpeed(5);
             enemyTanks.add(enemyTank);//加入坦克集合
 
         }
