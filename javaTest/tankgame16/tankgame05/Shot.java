@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16.tankgame04;
+package com.javaTest.tankgame16.tankgame05;
 
 public class Shot implements Runnable {
     int x;//子弹x坐标
