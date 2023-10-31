@@ -8,7 +8,11 @@ public class Master {
 		this.name = name;
 	}
 
-	public String getName() {
+    public Master() {
+
+    }
+
+    public String getName() {
 		return name;
 	}
 
