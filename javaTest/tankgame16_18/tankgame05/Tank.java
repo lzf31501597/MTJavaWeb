@@ -5,7 +5,7 @@ public class Tank {
     private int x;//横坐标
     private int y;//纵坐标
     private int speed = 2;//坦克移动速度
-    public boolean islived = true;
+    public boolean isLived = true;
 
     //上右下左移动方法
     public void moveUp(){
