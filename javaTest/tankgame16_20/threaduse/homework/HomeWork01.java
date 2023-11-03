@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse.homework;
+package com.javaTest.tankgame16_20.threaduse.homework;
 
 import java.util.Scanner;
 

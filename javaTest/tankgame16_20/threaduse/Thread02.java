@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse;
+package com.javaTest.tankgame16_20.threaduse;
 
 public class Thread02 {
     public static void main(String[] args) {

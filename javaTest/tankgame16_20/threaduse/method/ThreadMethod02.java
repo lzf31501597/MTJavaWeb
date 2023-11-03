@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse.method;
+package com.javaTest.tankgame16_20.threaduse.method;
 
 public class ThreadMethod02 {
     public static void main(String[] args) throws InterruptedException {

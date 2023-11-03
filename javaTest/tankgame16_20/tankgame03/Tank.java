@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.tankgame03;
+package com.javaTest.tankgame16_20.tankgame03;
 
 public class Tank {
     private int direct; //direct 表示方向（0 向上，1向右，2向下，3向左）

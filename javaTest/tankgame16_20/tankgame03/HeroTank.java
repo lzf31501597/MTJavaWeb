@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.tankgame03;
+package com.javaTest.tankgame16_20.tankgame03;
 
 public class HeroTank extends Tank {
     //定义一个shot对象，表示一个射击（线程）

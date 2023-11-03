@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.events;
+package com.javaTest.tankgame16_20.events;
 
 import javax.swing.*;
 import java.awt.*;

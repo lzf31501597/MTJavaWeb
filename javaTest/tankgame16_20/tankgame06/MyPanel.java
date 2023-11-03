@@ -1,10 +1,11 @@
-package com.javaTest.tankgame16_20.tankgame04;
+package com.javaTest.tankgame16_20.tankgame06;
 
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 import java.util.Vector;
 
 //为了监听键盘事件，实现KeyListener
@@ -16,6 +17,8 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
 
     //定义敌人的坦克,考虑多线程问题，降低人坦克放入 集合Vector
     Vector<EnemyTank> enemyTanks = new Vector<>();
+    //定义一个存放Node对象 Vector， 用于恢复敌人坦克的坐标和方向
+    Vector<Node> nodes = new Vector<>();
 
     //定义一个Vector用于存放炸弹
     //当子弹击中坦克时，加入一个Bomb对象到bombs集合
@@ -27,42 +30,110 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
     Image image2 = null;
     Image image3 = null;
 
-    public MyPanel() {//初始化坦克
-        tank = new HeroTank(500, 100);
+    public MyPanel(String key) {
+        //先判断记录文件是否存在
+        //如果存在，就正常执行；如果文件不存在。提示：只能开启新游戏，key=1；
+        File file = new File(Recorder.getRecorderFile());
+        if (file.exists()) {
+            nodes = Recorder.getNodesAndEnemyTankRec();
+        } else {
+            System.out.println("文件不存在。只能开启新游戏");
+            key = "1";
+        }
+
+        //将MyPanel对象的 enemyTanks 设置给 Recorder 的 enemyTanks
+        Recorder.setEnemyTanks(enemyTanks);
+
+        tank = new HeroTank(500, 100);//初始化坦克
         tank.setSpeed(8);//初始化坦克移动速度
 
-        //初始化敌人的坦克
-        for (int i = 0; i < enemyTankSize; i++) {
-            //enemyTanks.add(new EnemyTank(100 *(i + 1), 0));
-            //创建一个敌人的坦克
-            EnemyTank enemyTank = new EnemyTank(100 * (i + 1), 0);
-            enemyTank.setDirect(2);//设置敌人坦克的方向
-            enemyTank.setSpeed(5);
+        switch (key){
+            case "1":
+                //初始化敌人的坦克
+                for (int i = 0; i < enemyTankSize; i++) {
+                    //enemyTanks.add(new EnemyTank(100 *(i + 1), 0));
+                    //创建一个敌人的坦克
+                    EnemyTank enemyTank = new EnemyTank(100 * (i + 1), 0);
+                    //将enemyTanks 设置给enemyTank !!!!!
+                    enemyTank.setEnemyTanks(enemyTanks);
+                    enemyTank.setDirect(2);//设置敌人坦克的方向
+                    enemyTank.setSpeed(5);
 
-            //启动敌人坦克线程，让他动起来
-            new Thread(enemyTank).start();
-            //给该 enemyTank 加入一颗子弹
-            Shot shot = new Shot(enemyTank.getX() + 20, enemyTank.getY() + 40, enemyTank.getDirect());
-            //将子弹加入到EnemyTank类的Vector集合
-            enemyTank.shots.add(shot);
-            //启动shot对象
-            new Thread(shot).start();
+                    //启动敌人坦克线程，让他动起来
+                    new Thread(enemyTank).start();
+                    //给该 enemyTank 加入一颗子弹
+                    Shot shot = new Shot(enemyTank.getX() + 20, enemyTank.getY() + 40, enemyTank.getDirect());
+                    //将子弹加入到EnemyTank类的Vector集合
+                    enemyTank.shots.add(shot);
+                    //启动shot对象
+                    new Thread(shot).start();
 
-            enemyTanks.add(enemyTank);//加入坦克集合
+                    enemyTanks.add(enemyTank);//加入坦克集合
 
+                }
+                break;
+            case "2": //继续上局游戏
+                //初始化敌人的坦克
+                for (int i = 0; i < nodes.size(); i++) {
+                    Node node = nodes.get(i);
+                    //enemyTanks.add(new EnemyTank(100 *(i + 1), 0));
+                    //创建一个敌人的坦克
+                    //EnemyTank enemyTank = new EnemyTank(100 * (i + 1), 0);
+                    EnemyTank enemyTank = new EnemyTank(node.getX(), node.getY());
+
+                    //将enemyTanks 设置给enemyTank !!!!!
+                    enemyTank.setEnemyTanks(enemyTanks);
+                    enemyTank.setDirect(node.getDirect());//设置敌人坦克的方向
+                    enemyTank.setSpeed(5);
+
+                    //启动敌人坦克线程，让他动起来
+                    new Thread(enemyTank).start();
+                    //给该 enemyTank 加入一颗子弹
+                    Shot shot = new Shot(enemyTank.getX() + 20, enemyTank.getY() + 40, enemyTank.getDirect());
+                    //将子弹加入到EnemyTank类的Vector集合
+                    enemyTank.shots.add(shot);
+                    //启动shot对象
+                    new Thread(shot).start();
+
+                    enemyTanks.add(enemyTank);//加入坦克集合
+
+                }
+                break;
+            default:
+                System.out.println("输入有误。。。。");
         }
+
         //初始化爆炸图片对象
         image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_1.gif"));
         image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_2.gif"));
         image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_3.gif"));
+
+        //播放指定的音乐
+        new AePlayWave("/Users/dreamtank77/IdeaProjects/MTJavaWeb/src/com/javaTest/tankgame16_18/tankgame06/111.wav").start();
+
     }
+
+    //显示我方击毁敌人坦克的信息
+    public void showHitEnemyTankInfo(Graphics g){
+        //画出玩家的总成绩
+        g.setColor(Color.BLACK);
+        Font font = new Font("宋体", Font.BOLD, 18);
+        g.setFont(font);
+
+        g.drawString("您累计击毁敌方坦克", 1010, 30);
+        drawTank(1010, 60, g, 0, 1);//画出敌人的坦克
+        g.setColor(Color.BLACK); //这里要重新设置黑色
+        g.drawString(Recorder.getAllHitEnemyTankNum()+"", 1080, 100);
+    }
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
         g.fillRect(0, 0, 1000, 650);//填充矩形，默认是黑色
-        g.setColor(Color.WHITE);
+        showHitEnemyTankInfo(g);
+        //g.setColor(Color.WHITE);
 
-        if (tank != null && tank.islived) {
+        if (tank != null && tank.isLived) {
             //画出坦克--封装方法
             drawTank(tank.getX(), tank.getY(), g, tank.getDirect(), 0);
         }
@@ -202,11 +273,17 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
                 if (shot.x > tank1.getX() && shot.x < tank1.getX() + 40
                         && shot.y > tank1.getY() && shot.y < tank1.getY() + 40) {
                     shot.isLived = false;
-                    tank1.islived = false;//只是没有把坦克画出来，但是坦克集合里面没有去除
+                    tank1.isLived = false;//只是没有把坦克画出来，但是坦克集合里面没有去除
 
                     //坦克爆炸了，再往同一个地方射击的话，还是会爆炸效果
                     //当我的子弹击中敌人坦克后，将enemyTank从 enemyTanks 去除
                     enemyTanks.remove(tank1);
+
+                    //当我方坦克击毁敌人坦克时，就对数据pallEnemyTankNum++
+                    //因为 tank1 既可以是 EnemyTank ，也可以是 HeroTank
+                    if(tank1 instanceof EnemyTank){
+                        Recorder.addAllHitEnemyTankNum();
+                    }
 
                     //创建Bomb对象，加入到bombs集合
                     Bomb bomb = new Bomb(tank1.getX(), tank1.getY());
@@ -218,11 +295,17 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
                 if (shot.x > tank1.getX() && shot.x < tank1.getX() + 40
                         && shot.y > tank1.getY() && shot.y < tank1.getY() + 40) {
                     shot.isLived = false;
-                    tank1.islived = false;//只是没有把坦克画出来，但是坦克集合里面没有去除
+                    tank1.isLived = false;//只是没有把坦克画出来，但是坦克集合里面没有去除
 
                     //坦克爆炸了，再往同一个地方射击的话，还是会爆炸效果
                     //当我的子弹击中敌人坦克后，将enemyTank从 enemyTanks 去除
                     enemyTanks.remove(tank1);
+
+                    //当我方坦克击毁敌人坦克时，就对数据pallEnemyTankNum++
+                    //因为 tank1 既可以是 EnemyTank ，也可以是 HeroTank
+                    if(tank1 instanceof EnemyTank){
+                        Recorder.addAllHitEnemyTankNum();
+                    }
 
                     //创建Bomb对象，加入到bombs集合
                     Bomb bomb = new Bomb(tank1.getX(), tank1.getY());
@@ -272,7 +355,7 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
                 //取出子弹
                 Shot shot = enemyTank.shots.get(j);
                 //判断 shot 是否击中我的坦克
-                if (tank.islived && shot.isLived) {
+                if (tank.isLived && shot.isLived) {
                     hitTank(shot, tank);
                 }
             }

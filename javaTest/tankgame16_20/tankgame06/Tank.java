@@ -1,11 +1,11 @@
-package com.javaTest.tankgame16_20.tankgame04;
+package com.javaTest.tankgame16_20.tankgame06;
 
 public class Tank {
     private int direct; //direct 表示方向（0 向上，1向右，2向下，3向左）
     private int x;//横坐标
     private int y;//纵坐标
     private int speed = 2;//坦克移动速度
-    public boolean islived = true;
+    public boolean isLived = true;
 
     //上右下左移动方法
     public void moveUp(){

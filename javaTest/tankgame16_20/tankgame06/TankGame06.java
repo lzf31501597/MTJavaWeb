@@ -1,20 +1,20 @@
-package com.javaTest.tankgame16_20.tankgame05;
+package com.javaTest.tankgame16_20.tankgame06;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Scanner;
 
-public class TankGame05 extends JFrame {
+public class TankGame06 extends JFrame {
     //定义画板 MyPanel
     MyPanel myPanel = null;
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
-        TankGame05 tankGame02 = new TankGame05();
+        TankGame06 tankGame02 = new TankGame06();
     }
 
-    public TankGame05() {
+    public TankGame06() {
         System.out.println("请输入选择 1：新游戏 2：继续上局");
         String key = scanner.next();
 

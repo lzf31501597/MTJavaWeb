@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.tankgame04;
+package com.javaTest.tankgame16_20.tankgame04;
 
 public class Bomb {
     int x, y; //爆炸坐标

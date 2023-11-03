@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.tankgame05;
+package com.javaTest.tankgame16_20.tankgame05;
 
 
 public class HeroTank extends Tank {

@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18;
+package com.javaTest.tankgame16_20;
 
 public class CpuNum {
     public static void main(String[] args) {

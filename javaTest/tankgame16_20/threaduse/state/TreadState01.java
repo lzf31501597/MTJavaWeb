@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse.state;
+package com.javaTest.tankgame16_20.threaduse.state;
 
 public class TreadState01 {
     public static void main(String[] args) throws InterruptedException {

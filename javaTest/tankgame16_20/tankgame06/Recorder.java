@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_20.tankgame05;
+package com.javaTest.tankgame16_20.tankgame06;
 
 import java.io.*;
 import java.util.Vector;
@@ -19,7 +19,7 @@ public class Recorder {
     private static BufferedReader br = null;
     //private static String filePath = "/Users/dreamtank77/IdeaProjects/MTJavaWeb/src/com/javaTest/tankgame16_18/tankgame05/";
     //private static String recorderFile = "./javaFile/myRecorder.txt";
-    private static String recorderFile = "/Users/dreamtank77/IdeaProjects/MTJavaWeb/src/com/javaTest/tankgame16_18/tankgame05/myRecorder.txt";
+    private static String recorderFile = "/Users/dreamtank77/IdeaProjects/MTJavaWeb/src/com/javaTest/tankgame16_18/tankgame06/myRecorder.txt";
 
     //定义Vector， 指向 MyPanel 对象的敌人坦克Vector
     private static Vector<EnemyTank> enemyTanks = null;
@@ -29,6 +29,11 @@ public class Recorder {
 
     public static void setEnemyTanks(Vector<EnemyTank> enemyTanks) {
         Recorder.enemyTanks = enemyTanks;
+    }
+
+    //返回记录文件的路径
+    public static String getRecorderFile() {
+        return recorderFile;
     }
 
     //用于读取，恢复坦克相关信息

@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.tankgame01;
+package com.javaTest.tankgame16_20.tankgame01;
 
 import javax.swing.*;
 

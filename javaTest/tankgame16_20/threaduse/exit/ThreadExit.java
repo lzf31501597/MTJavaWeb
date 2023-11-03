@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse.exit;
+package com.javaTest.tankgame16_20.threaduse.exit;
 
 public class ThreadExit {
     public static void main(String[] args) throws InterruptedException {

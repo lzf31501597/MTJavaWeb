@@ -1,4 +1,4 @@
-package com.javaTest.tankgame16_18.threaduse.synchronized_;
+package com.javaTest.tankgame16_20.threaduse.synchronized_;
 
 public class DeadLock_ {//模拟线程死锁
 
