@@ -117,7 +117,7 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
     public void showHitEnemyTankInfo(Graphics g){
         //画出玩家的总成绩
         g.setColor(Color.BLACK);
-        Font font = new Font("宋体", Font.BOLD, 18);
+        Font font = new Font("宋体", Font.BOLD, 15);
         g.setFont(font);
 
         g.drawString("您累计击毁敌方坦克", 1010, 30);
