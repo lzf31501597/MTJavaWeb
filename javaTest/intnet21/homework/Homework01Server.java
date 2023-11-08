@@ -27,13 +27,25 @@ public class Homework01Server {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         //4.IO读取
         String readLen = bufferedReader.readLine();
-        System.out.println(readLen);
+        String answer = "";
+        if (readLen.equals("name")) {
+            System.out.println(readLen);
+            answer = "我是nova。。。";
+            //bufferedWriter.write("我是nova。。。");
+        }else if (readLen.equals("hobby")) {
+            System.out.println(readLen);
+            answer = "编写Java程序。。。";
+           // bufferedWriter.write("编写Java程序。。。");
+        }else {
+            System.out.println(readLen);
+            answer = "你说啥ne。。。";
+            //bufferedWriter.write("你说啥ne。。。");
 
-
+        }
         //5.通过 OutputStream 写入数据到数据通道
         OutputStream outputStream = accept.getOutputStream();
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
-        bufferedWriter.write("hello, client 字符流");
+        bufferedWriter.write(answer);
         bufferedWriter.newLine();//插入一个换行符，表示写入的回复内容结束，(要求读取使用readLine())
         bufferedWriter.flush();// 如果使用的字符流，需要手动刷新，否则数据不会写入数据通道
 

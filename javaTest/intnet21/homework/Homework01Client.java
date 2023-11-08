@@ -3,6 +3,7 @@ package com.javaTest.intnet21.homework;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.util.Scanner;
 
 /**
  * @author
@@ -23,7 +24,15 @@ public class Homework01Client {
 
         //3.通过输出流，写入数据到数据通道
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
-        bufferedWriter.write("hello server 字符流");
+        /*String[] strs = {"name", "hobby", "null"};
+        for (int i = 0; i < strs.length; i++) {
+            bufferedWriter.write(strs[i]);
+        }*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入你的问题：");
+        String next = scanner.next();
+
+        bufferedWriter.write(next);
         bufferedWriter.newLine();//插入一个换行符，表示写入的内容结束，(要求读取使用readLine())
         bufferedWriter.flush();// 如果使用的字符流，需要手动刷新，否则数据不会写入数据通道
 
