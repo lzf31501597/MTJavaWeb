@@ -1,6 +1,7 @@
 package com.edu.qqcommon;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * @author
@@ -15,6 +16,54 @@ public class Message implements Serializable {
     private String content;//消息内容
     private String sentTime;//发送时间
     private String mesType;//消息类型[可以在接口定义消息类型]
+    //离线留言，离线发送文件
+    private ArrayList<Message> offLineDb = new ArrayList<>();
+
+    //扩展文件相关的成员
+    private byte[] fileBytes;
+    private int fileLen = 0;
+    private String dest;//将文件传输到哪里
+    private String src;//原文件路径
+
+    public ArrayList<Message> getOffLineDb() {
+        return offLineDb;
+    }
+
+    public void setOffLineDb(ArrayList<Message> offLineDb) {
+        this.offLineDb = offLineDb;
+    }
+
+    public byte[] getFileBytes() {
+        return fileBytes;
+    }
+
+    public void setFileBytes(byte[] fileBytes) {
+        this.fileBytes = fileBytes;
+    }
+
+    public int getFileLen() {
+        return fileLen;
+    }
+
+    public void setFileLen(int fileLen) {
+        this.fileLen = fileLen;
+    }
+
+    public String getDest() {
+        return dest;
+    }
+
+    public void setDest(String dest) {
+        this.dest = dest;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
 
     public String getSender() {
         return sender;

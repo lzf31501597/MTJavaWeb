@@ -40,17 +40,21 @@ public class UserClientService {
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream()); //登录成功
             Message ms = (Message) ois.readObject();
 
-            if (ms.getMesTime().equals(MessageType.MESSAGE_LOGIN_SUCCEED)) {//登录成功
+            if (ms.getMesType().equals(MessageType.MESSAGE_LOGIN_SUCCEED)) {//登录成功
 
                 //创建一个和服务器端保持通信的线程--》创建一个类 ClientConnectServerThead
                 //
                 ClientConnectServerThread clientConnectServerThread = new ClientConnectServerThread(socket);
-                clientConnectServerThread.start();//启动线程
+                clientConnectServerThread.start();//启动客户端线程
                 //为了后面客户端的扩展，我们将线程放入到集合管理
                 ManageClientConnectServerThread.addClientConnectServerThread(userId, clientConnectServerThread);
                 b = true;
 
-            }else {
+            }/*else if (ms.getMesType().equals(MessageType.MESSAGE_CONN_MES)){//普通聊天信息
+                System.out.println("\n" +ms.getSender() + " 对 " + ms.getGetter()
+                        + " 说： " + ms.getContent());
+
+            }*/else {
                 //如果登录失败，我们就不能启动和服务器通信的线程，关闭socket
                 socket.close();
                 //b = false;
@@ -59,14 +63,53 @@ public class UserClientService {
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                socket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
         return b;
     }
+
+    //向服务器请求在线的用户列表
+    public void onlineFriendList(){
+        //发送一个 Message，类型 MESSAGE_GET_ONLINE_FRIEND = "4"
+        Message message = new Message();
+        message.setMesType(MessageType.MESSAGE_GET_ONLINE_FRIEND);
+        message.setSender(u.getUserId());
+
+        try {
+            //从管理线程的集合中，通过userId ，得到这个线程对象
+            ClientConnectServerThread clientConnectServerThread = ManageClientConnectServerThread.getClientConnectServerThread(u.getUserId());
+            //通过得到这个线程对象得到关联的Socket
+            Socket socket = clientConnectServerThread.getSocket();
+            //发送给服务器,得到当前线程的Socket 对应，ObjectOutputStream对象
+            //ObjectOutputStream objectOutputStream = new ObjectOutputStream(ManageClientConnectServerThread.getClientConnectServerThread(u.getUserId()));
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
+            objectOutputStream.writeObject(message);//发送一个Message 对象，向服务器要求在线列表
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    //退出客户端，并给服务器发送一个退出系统的Message对象
+    public void logout(){
+        Message message = new Message();
+        message.setMesType(MessageType.MESSAGE_CLIENT_EXIT);
+        message.setSender(u.getUserId());//必须指定是哪个客户端的userId
+
+        //发送message
+        try {
+            //ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
+            ObjectOutputStream oos = new ObjectOutputStream(ManageClientConnectServerThread.getClientConnectServerThread(u.getUserId()).getSocket().getOutputStream());
+
+            oos.writeObject(message);
+            System.out.println(u.getUserId() + " 退出系统");
+            System.exit(0); //结束线程
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 
 }
