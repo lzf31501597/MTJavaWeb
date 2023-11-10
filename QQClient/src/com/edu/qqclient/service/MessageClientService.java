@@ -22,6 +22,7 @@ public class MessageClientService {
         message.setSender(senderId);
         message.setGetter(getterId);
         message.setContent(content);
+        message.setOffLineDb(message.getOffLineDb());
         message.setSentTime(new Date().toString());//设置发送时间到message对象
         System.out.println(message.getSentTime()+": "+senderId + " 对 " + getterId + " 说：" + content);
 
