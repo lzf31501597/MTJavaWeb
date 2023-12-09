@@ -1,4 +1,4 @@
-package com.javaTest.dao25.dao;
+package com.javaTest.manhanlou26.dao;
 
 import com.javaTest.dao25.utils.JDBCUtilsByDruid;
 import org.apache.commons.dbutils.QueryRunner;
