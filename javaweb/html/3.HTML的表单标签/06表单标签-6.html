@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 表单method提交方式的区别
+			1。get提交参数会拼接到地址栏后面，post不会
+			2.get提交数据，涉及敏感信息不安全，post相对安全
+			3.get提交的数据量是有限的，post从理论上提交的数据量无限大
+		 -->
+		<form action="demo.html" method="get" enctype="application/x-www-form-urlencoded">
+			用户名：<input type="test" name="username"/>
+			<input type="submit" name="get提交" value="get提交" />
+		</form><br />
+		
+		<form action="demo.html" method="post">
+			用户名：<input type="test" name="username"/>
+			<input type="submit" name="post提交" value="post提交"/>
+		</form><br />
+	</body>
+</html>
