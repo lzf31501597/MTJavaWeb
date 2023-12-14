@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/* //文本框元素节点对象还没有被加载
+			var t1=document.getElementById("t1");
+			alert(t1); */
+		</script>
+	</head>
+	<body>
+		<input type="text" id="t1"/>
+		<script>
+			 //注意事项：1、要想获取某个/某些元素节点对象，必须保证元素节点对象，先被加载到内存中
+			var t1=document.getElementById("t1");
+			alert(t1); 
+		</script>
+		
+	</body>
+</html>

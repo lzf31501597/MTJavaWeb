@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" id="t1"/>
+		<input type="checkbox" name="hobby" value="read"/>阅读
+		<input type="checkbox" name="hobby" value="code"/>编程
+		<input type="checkbox" name="hobby" value="run"/>跑步
+		<ul>
+			<li>javaee</li>
+			<li>ios</li>
+			<li>andriod</li>
+			<li>php</li>
+		</ul>
+		<input type="radio" name="sex" value="man" class="c1"/>男
+		<input type="radio" name="sex" value="woman" class="c1"/>女
+		<br />
+		
+		<input type="submit"/>
+		<script>
+			/* var t1=document.getElementById("t1");
+			alert(t1);
+			alert(document.getElementById(t2)); */
+		
+			/* //通过name属性，获取所有需要元素，返回一个元素节点对象数组
+			var arr1=document.getElementsByName("hobby");
+			alert(arr1.length); */
+			
+			/* //通过标签名，获取所有需要的元素
+			var arr2=document.getElementsByTagName("li");
+			alert(arr2.length); */
+			
+			//通过class属性值，获取所有需要的元素
+			var arr3=document.getElementsByClassName("c1");
+			alert(arr3.length);
+		</script>
+		
+	</body>
+</html>

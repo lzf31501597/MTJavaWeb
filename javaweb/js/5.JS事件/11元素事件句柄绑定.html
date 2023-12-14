@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function run1 () {
+				alert("run1");
+			}
+			function run2 (str) {
+				alert(str);
+			}
+			function run3 (obj) {
+				alert(obj.value);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 绑定无参函数-->
+		<input type="text" value="1111" onclick="run1()" /><br/>
+		
+		<!-- 绑定有参函数，参数是一个字符串-->
+		<input type="text" value="222" onclick="run2('你好啊 run2')" /><br/>
+		
+		<!-- 绑定有参函数，参数是一个字符串-->
+		<input type="text" value="333" onclick="run3(this)" /><br/>
+	</body>
+</html>

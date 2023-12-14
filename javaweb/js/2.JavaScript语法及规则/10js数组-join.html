@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var arr1=[1,2,3,"a",true];//********
+			var result=arr1.join("-");//将数组重元素通过-连接起来成为一个字符串
+			
+			alert(result);
+			alert(arr1.length);
+			
+			var poparr=arr1.pop();//删除并返回最后一个元素
+			alert(arr1.pop());//删除true
+			alert(poparr);//删除a
+			alert(arr1.length);
+			
+			var pusharr=arr1.push(88);//向数组的末尾添加一个或更多元素，并返回返回新的长度
+			alert(pusharr);
+			alert(arr1.length);
+			
+			var pusharr1=arr1.push(28,22,45,66);//向数组的末尾添加一个或更多元素，并返回返回新的长度
+			alert(pusharr1);
+			alert(arr1.length);
+		
+			alert(arr1.reverse());//可以物理的将数组的元素反转//66,45,22,28,88,3,2,1
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

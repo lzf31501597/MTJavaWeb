@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="1内部js脚本.js">
+			/* 外部引用时，script标签不能有script代码，即使写了也不会执行，会被src引入的脚本覆盖。 */
+			alert("js内部引入1。。。");
+		</script>
+		<script>
+			alert("js内部引入2。。。");
+		</script>
+	</head>
+	<body>
+		<!-- script标签  放在body结束前 -->
+	</body>
+</html>
