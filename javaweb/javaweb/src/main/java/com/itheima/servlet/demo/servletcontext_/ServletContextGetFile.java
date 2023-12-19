@@ -36,7 +36,7 @@ public class ServletContextGetFile extends HttpServlet {
 			//InputStream is = new FileInputStream("classes/db.properties");
 			//InputStream is = this.getServletContext().getResourceAsStream("/WEB-INF/classes/db.properties");
 
-			String path = this.getServletContext().getRealPath("/WEB-INF/classes/com/itheima/servlet/demo/db.properties");
+			String path = this.getServletContext().getRealPath("/WEB-INF/db.properties");
 			System.out.println(path);
 			InputStream is = new FileInputStream(path);
 			properties.load(is);

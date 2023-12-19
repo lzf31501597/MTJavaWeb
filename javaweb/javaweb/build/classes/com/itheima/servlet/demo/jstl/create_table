@@ -1,0 +1,12 @@
+use tmp;
+create table stu_jstl(
+	sid int primary key auto_increment,
+	sname varchar(32),
+	sex varchar(10),
+	age int
+);
+insert into stu_jstl values(null, '张三', '男', 20);
+insert into stu_jstl values(null, '李四', '女', 25);
+insert into stu_jstl values(null, '王五', '男', 28);
+insert into stu_jstl values(null, '赵六', '女', 30);
+insert into stu_jstl values(null, '孙七', '男', 29);

@@ -136,7 +136,7 @@
     <servlet-name>ResponseSend</servlet-name>
     <url-pattern>/ResponseSend</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>ResponseSend2</display-name>
     <servlet-name>ResponseSend2</servlet-name>
@@ -145,5 +145,105 @@
   <servlet-mapping>
     <servlet-name>ResponseSend2</servlet-name>
     <url-pattern>/ResponseSend2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseCode</display-name>
+    <servlet-name>ResponseCode</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.response_.ResponseCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseCode</servlet-name>
+    <url-pattern>/ResponseCode</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseCode2</display-name>
+    <servlet-name>ResponseCode2</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.response_.ResponseCode2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseCode2</servlet-name>
+    <url-pattern>/ResponseCode2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestSend</display-name>
+    <servlet-name>RequestSend</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.request_.RequestSend</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestSend</servlet-name>
+    <url-pattern>/RequestSend</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestReceive</display-name>
+    <servlet-name>RequestReceive</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.request_.RequestReceive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestReceive</servlet-name>
+    <url-pattern>/RequestReceive</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestReceive2</display-name>
+    <servlet-name>RequestReceive2</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.request_.RequestReceive2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestReceive2</servlet-name>
+    <url-pattern>/RequestReceive2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VisitServlet</display-name>
+    <servlet-name>VisitServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.cookies.VisitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VisitServlet</servlet-name>
+    <url-pattern>/VisitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.login.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckImgServlet</display-name>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.login.controller.CheckImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <url-pattern>/CheckImgServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.login.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentServlet</display-name>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.jstl.controller.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/StudentServlet</url-pattern>
   </servlet-mapping>
 </web-app>
