@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>省市二级联动</title>
+<script type="text/javascript" src="/javaweb/js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		var url="/javaweb/CityServlet01?method=xml";
+		$.post(url, function(data){
+			var xml=$(data);
+			var pnames=xml.find("省份name")
+			pnames.each(function(){
+				var pname=($(this).text());
+				$("#province").append($("<option>"+pname+"</option>"));
+			});
+			
+			$("#province").change(function(){
+				$("#city").html("<option>--选择城市--</option>");
+				var pname=$(this).val();
+				var province = xml.find("pname:contains('"+pname+"')").parent();
+				var list = province.next();
+				var cnames=list.find("name");
+				cnames.each(function(){
+					alert($(this).text());
+					$("#city").append($("<option>"+cityname+"</option>"));
+				});
+			});
+		},"xml");
+		
+		
+	});
+</script>
+</head>
+<body>
+	<select id="province">
+		<option>--选择省份--</option>
+	</select>省
+	<select id="city">
+		<option>--选择城市--</option>
+	</select>市
+</body>
+</html>

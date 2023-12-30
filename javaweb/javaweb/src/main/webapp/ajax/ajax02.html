@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/javaweb/js/my.js"></script>
+<script type="text/javascript">
+var xmlhttp=null;
+function getXmlHttpRequest(){
+	
+	//1.获取一个 XMLHttpRequest 对象
+	if (window.XMLHttpRequest){
+		   //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+		xmlhttp=new XMLHttpRequest();
+	}
+	else if (window.ActiveXObject){
+		    // IE6, IE5 浏览器执行代码
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}	
+	return xmlhttp;
+} 
+	//验证录入的用户名是否可以使用
+	function checkUsername(){
+		//1. 得到文本框中的信息
+		var usernameValue=document.getElementById("username").value;
+		//alert(usernameValue);
+		//2.使用ajax向服务器发送请求，并且携带username信息
+		//2.1获取 XMLHttpRequest对象
+		var xmlHttp=getXmlHttpRequest();
+		//2.2设置回调函数
+		xmlHttp.onreadystatechange=function(){
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				//得到响应数据
+				var responseMsg = xmlhttp.responseText;
+				//alert(responseMsg);
+				//3.处理服务器相应的数据，在span块中显示信息
+				document.getElementById("username_msg").innerHTML = responseMsg;
+				
+			}else{
+				alert("problem...");
+			}
+		}
+		
+		//2.3 设置请求路径与方式
+		xmlHttp.open("POST", "/javaweb/UserServlet");
+		//2.4 发送请求
+		xmlHttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
+		xmlHttp.send("username="+usernameValue);
+		//3.处理服务器相应的数据，在span块中显示信息
+	}
+</script>
+</head>
+<body>
+
+	<input type="text" id="username" onblur="checkUsername()">
+	<span id="username_msg"></span>
+</body>
+</html>

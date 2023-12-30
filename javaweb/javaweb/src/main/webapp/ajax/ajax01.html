@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xmlhttp=null;
+	function sendAjax(){
+		//1.获取一个 XMLHttpRequest 对象
+		
+		if (window.XMLHttpRequest){
+		    //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+		    xmlhttp=new XMLHttpRequest();
+		}
+		else if (window.ActiveXObject){
+		    // IE6, IE5 浏览器执行代码
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		//2.设置回调函数
+		xmlhttp.onreadystatechange=callback;
+		
+		//3.设置请求方式及URl
+		var url="http://localhost:8080/javaweb/AjaxServlet";
+		xmlhttp.open("GET",url,true);
+		//4.向服务器发送请求
+		xmlhttp.send(null);
+		//document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+		
+	}
+	//回调函数
+	function callback(){
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			//得到响应数据
+			alert(xmlhttp.responseText);
+		}else{
+			alert("problem...");
+		}
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="按钮" onclick="sendAjax()">
+</body>
+</html>

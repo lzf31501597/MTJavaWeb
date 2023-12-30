@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/javaweb/js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+
+	$("#content").hide();
+	$(function(){
+		$("#a").toggle(function(){
+			var url="/javaweb/ProductServlet";
+			$.post(url, function(data){
+				var jsonObj=eval(data);
+				//alert(jsonObj[0].id);
+				var tab=$("<table><tr><td>编号</td><td>名称</td><td>数量</td><td>价格</td></tr></table>");
+				for(var i=0; i<jsonObj.length; i++){
+					var obj=jsonObj[i];
+					var tr=$("<tr><td>"+obj.id+"</td><td>"+obj.name+"</td><td>"+obj.count+"</td><td>"+obj.price+"</td></tr>");
+					tab.append(tr);
+				}
+				$("#content").append(tab);
+				$("#content").show();
+			},"jason");
+		
+		},function(){
+			$("#content").hide();
+			$("#content").html("");
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<a id="a" href="javascript:void(0)">显示商品信息</a>
+	<hr>
+	<div id="content">
+	
+	</div>
+</body>
+</html>

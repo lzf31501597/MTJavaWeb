@@ -20,7 +20,7 @@
 	${ arrs[1] }
 	${ arrs[2] }
 	
-	<h1>EL获取List集合ß数据</h1>
+	<h1>EL获取List集合数据</h1>
 	<%
 		List<String> list = new ArrayList();
 		list.add("11");

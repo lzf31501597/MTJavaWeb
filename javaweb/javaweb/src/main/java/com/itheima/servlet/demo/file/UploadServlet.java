@@ -1,5 +1,6 @@
 package com.itheima.servlet.demo.file;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,6 +18,8 @@ import org.apache.tomcat.util.http.fileupload.RequestContext;
 import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 
+import com.itheima.servlet.demo.file.utils.UploadUtils;
+
 
 public class UploadServlet extends HttpServlet {
 
@@ -31,7 +34,7 @@ public class UploadServlet extends HttpServlet {
 			// 2.创建一个核心的解析类
 			ServletFileUpload servletFileUpload = new ServletFileUpload(diskFileItemFactory);
 			// 3.利用核心类解析Request，解析后会得到多个部分，返回一个集合。List集合装的是每一个部分的内容（FileItem文件项）
-			List<FileItem> list = servletFileUpload.parseRequest(req);
+			List<FileItem> list = servletFileUpload.parseRequest((RequestContext) req);
 			// 4.遍历List集合，会得到代表每个部分的文件项的对象。根据文件判断是否是文件上传。
 			for (FileItem fileItem : list) {
 				//判断这个文件项是否是普通项还是文件上传
@@ -46,12 +49,31 @@ public class UploadServlet extends HttpServlet {
 				} else {//文件上传
 					//获取文件上传的文件名称
 					String filename = fileItem.getName();
+					System.out.println("文件名："+filename);
+					int index = filename.lastIndexOf("\\");
+					if (index != -1) {
+						filename = filename.substring(index+1);
+					}
+					
+					//得到唯一文件名
+					String uuidFilename = UploadUtils.getUuidFilename(filename);
+					
+					
 					//获取文件上传的数据
 					InputStream iStream =fileItem.getInputStream();
 					//获取文件上传的路径：磁盘绝对路径
 					String  realPath= getServletContext().getRealPath("/upload");
+					
+					// 进行目录分离
+					String path = UploadUtils.getRealPath(uuidFilename);
+					String newpath = realPath + path;
+					File file = new File(newpath);
+					if (!file.exists()) {
+						file.mkdirs();
+					}
+					
 					//创建一个输出流，写入到设置的路径中
-				    OutputStream oStream = new FileOutputStream(realPath+"/"+filename);
+				    OutputStream oStream = new FileOutputStream(newpath+"/"+uuidFilename);
 					//两个流对接
 				    int len =0;
 				    byte[] bytes = new byte[1024];

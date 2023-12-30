@@ -11,49 +11,82 @@
   </welcome-file-list>
   <servlet>
     <description></description>
+    <display-name>AjaxServlet</display-name>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.ajax.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/AjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>UserServlet</display-name>
     <servlet-name>UserServlet</servlet-name>
-    <servlet-class>com.itheima.servlet.demo.filter_.project.controller.UserServlet</servlet-class>
+    <servlet-class>com.itheima.servlet.demo.ajax.UserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/UserServlet</url-pattern>
   </servlet-mapping>
-
   <servlet>
     <description></description>
-    <display-name>ServletName</display-name>
-    <servlet-name>ServletName</servlet-name>
-    <servlet-class>com.itheima.servlet.demo.filter_.project.controller.ServletName</servlet-class>
+    <display-name>ProvinceServlet</display-name>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.ajax.ProvinceServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ServletName</servlet-name>
-    <url-pattern>/ServletName</url-pattern>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <url-pattern>/ProvinceServlet</url-pattern>
   </servlet-mapping>
-    <filter>
-    <filter-name>PrivilegeFilter</filter-name>
-    <filter-class>com.itheima.servlet.demo.filter_.project.filter.PrivilegeFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>PrivilegeFilter</filter-name>
-    <url-pattern>/filter_jsp/*</url-pattern>
-  </filter-mapping>
-  <filter>
-    <filter-name>GenericEncodingFilter</filter-name>
-    <filter-class>com.itheima.servlet.demo.filter_.project.filter.GenericEncodingFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>GenericEncodingFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
-    <servlet>
+  <servlet>
     <description></description>
-    <display-name>UploadServlet</display-name>
-    <servlet-name>UploadServlet</servlet-name>
-    <servlet-class>com.itheima.servlet.demo.file.UploadServlet</servlet-class>
+    <display-name>CityServlet</display-name>
+    <servlet-name>CityServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.ajax.CityServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>UploadServlet</servlet-name>
-    <url-pattern>/UploadServlet</url-pattern>
+    <servlet-name>CityServlet</servlet-name>
+    <url-pattern>/CityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoadServlet</display-name>
+    <servlet-name>LoadServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.ajax.LoadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadServlet</servlet-name>
+    <url-pattern>/LoadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductServlet</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.fastjson.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CityServlet01</display-name>
+    <servlet-name>CityServlet01</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.fastjson.servlet.CityServlet01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServlet01</servlet-name>
+    <url-pattern>/CityServlet01</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>XmlServlet</display-name>
+    <servlet-name>XmlServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.fastjson.xml.XmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>XmlServlet</servlet-name>
+    <url-pattern>/XmlServlet</url-pattern>
   </servlet-mapping>
 </web-app>

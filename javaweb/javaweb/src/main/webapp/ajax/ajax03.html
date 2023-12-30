@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/javaweb/js/my.js"></script> 
+<script type="text/javascript">
+var xmlhttp=null;
+function getXmlHttpRequest(){
+	
+	//1.获取一个 XMLHttpRequest 对象
+	if (window.XMLHttpRequest){
+		   //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+		xmlhttp=new XMLHttpRequest();
+	}
+	else if (window.ActiveXObject){
+		    // IE6, IE5 浏览器执行代码
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}	
+	return xmlhttp;
+} 
+	function getProvince(){
+		xmlHttp=getXmlHttpRequest();
+		//2.2设置回调函数
+		xmlHttp.onreadystatechange=function(){
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				//得到响应数据
+				var provinces = xmlhttp.responseText;
+				var ps = provinces.split(",");
+				//alert(provinces);
+				//alert(ps.length + " " + ps[0]);
+				for(var i=0; i<ps.length; i++){
+					var option = document.createElement('option');
+					option.text = ps[i];
+					//3.处理服务器相应的数据，在span块中显示信息
+					document.getElementById("province").add(option);
+				}
+			}
+		}
+		//2.3 设置请求路径与方式
+		xmlHttp.open("POST", "/javaweb/ProvinceServlet");
+		//2.4 发送请求
+		xmlHttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
+		xmlHttp.send(null);
+	}
+	
+	function getCity(){
+		var provincename=document.getElementById("province");
+		var ops = provincename.options;
+		
+		var option = ops[provincename.selectedIndex];
+		var pname = option.text;
+		//alert(pname);
+		xmlHttp=getXmlHttpRequest();
+		//2.2设置回调函数
+		xmlHttp.onreadystatechange=function(){
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("city").innnerHTML="<option>--请选择城市--</option>";
+				//得到响应数据
+				var citys = xmlhttp.responseText;
+				var cs = citys.split(",");
+				
+				//alert(provinces);
+				for(var i=0; i<cs.length; i++){
+					var option = document.createElement('option');
+					option.text = cs[i];
+					//3.处理服务器相应的数据，在span块中显示信息
+					document.getElementById("city").add(option);
+				}
+			}
+		}
+		//2.3 设置请求路径与方式
+		xmlHttp.open("POST", "/javaweb/CityServlet");
+		//2.4 发送请求
+		xmlHttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
+		xmlHttp.send("pname=" +pname);
+	}
+</script>
+</head>
+<body onload="getProvince()">
+	<select id="province" onchange="getCity()">
+		<option>--请选择省份--</option>
+	</select>
+	<select id="city">
+		<option>--请选择城市--</option>
+	</select>
+</body>
+</html>

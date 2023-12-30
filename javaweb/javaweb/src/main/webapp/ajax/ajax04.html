@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/javaweb/js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#username").blur(function(){
+			var username = $("#username").val();
+			
+			var url = "/javaweb/LoadServlet";
+			$("#username_msg").load(url, {'username':username});
+			
+		});
+		/* $(function(){
+			$("#password").blur(function(){
+				var password = $("#password").val();
+				
+				var url = "/javaweb/LoadServlet";
+				$("#password_msg").load(url, {'password':password});
+				
+			}); */
+	});
+</script>
+</head>
+<body>
+	姓名：<input type="text" id="username" name="username">
+	<span id="username_msg"></span><br>
+	密码：<input type="password" id="password" name="password">
+	<span id="password_msg"></span><br>
+</body>
+</html>
