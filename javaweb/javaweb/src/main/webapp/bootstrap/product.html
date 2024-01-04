@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="/javaweb/bootstrap/css/bootstrap.min.css">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<script src="/javaweb/bootstrap/jquery-1.11.3.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="/javaweb/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		skipPage(1)
+	});
+	function skipPage(pageNUm){
+		var pageNo=1;
+		var pageSize=5;
+		var totalPage=5;
+		var totalCount=0;
+		
+		var url="/javaweb/ProServlet";
+		$.post(url, {"pageNo":pageNo,"pageSize":pageSize}, function(data){
+			//alert(pageNo +":"+ pageSize);
+			var jsonObj=eval(data);
+			//alert(json);
+			//var jsonObj=json.content;
+			//alert(jsonObj);
+			
+			pageNo=jsonObj.pageNo;
+			
+			pageSize=jsonObj.pageSize;
+			
+			totalPage=jsonObj.totalPage;
+			
+			totalCount=jsonObj.totalCount;
+			
+			
+			var html="";
+			for(var i=0;i<jsonObj.length;i++){
+				html+="<tr>";
+				html+="<td>"
+					+jsonObj[i].id+"</td><td>"
+					+jsonObj[i].name+"</td><td>"
+					+jsonObj[i].count+"</td><td>"
+					+jsonObj[i].price+"</td>";
+				html+="</tr>";
+			}
+			
+			var pageMsg="<ul class='pagination pagination-sm'>";
+			
+			if(pageNo==1){
+				pageMsg+="<li class='disabled'><a href='#'>&laquo;</a></li>";
+			}else{
+				pageMsg+="<li><a href='javascript:void(0) onclick='skipPage("+(pageNo-1)+")'>&laquo;</a></li>";
+			}
+			
+			for(var i=0;i<totalPage;i++){
+				//pageMsg+="<li class='active'><a href='#'>"+(i+1)+"</a></li>";
+				if(i+1 == pageNo){
+					pageMsg+="<li class='active'><a href='javascript:void(0) onclick='skipPage("+(i+1)+")'>"
+					+(i+1)
+					+"<span class='sr-only'>(current)</span></a></li>";
+				}else{
+					pageMsg+="<li><a href='javascript:void(0)' onclick='skipPage("+(i+1)+")'>"
+					+(i+1)+"</a></li>";
+				}
+			}
+			if(pageNo==totalPage){
+				pageMsg+="<li class='disabled'><a href='#'>&raquo;</a></li>";
+			}else{
+				pageMsg+="<li><a href='javascript:void(0)' onclick='skipPage("+(pageNo+1)+")'>&raquo;</a></li>";
+			}
+			
+			pageMsg+="</ul>";
+			//alert(html);
+			
+			$("#tab").html("<tr><td>序号</td><td>名称</td><td>数量</td><td>价格</td></tr><tr><td colspan='4'><nav id='n'></nav></td></tr>")
+			$("#n").append(pageMsg);
+			$("#tab tr:nth-child(1)").after(html);
+		},"json");
+	};
+	
+</script>
+<style type="text/css">
+	div{
+		width: 70%;
+		margin-left: 100px;
+		margin-top: 100px;
+	}
+</style>
+</head>
+<body>
+
+	<div class="div" align="center">
+		<table class="table table-bordered" id="tab">
+			<tr>
+				<td>序号</td>
+				<td>名称</td>
+				<td>数量</td>
+				<td>价格</td>
+			</tr>
+			<tr>
+			 <td colspan="4">
+				<nav id="n">
+				
+				</nav>
+				</td>
+			</tr>
+		</table>
+			
+			
+		
+	</div>
+
+
+</body>
+</html>

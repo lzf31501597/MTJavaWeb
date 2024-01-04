@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="/javaweb/bootstrap/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var msg=$("#f").serialize();
+		alert(msg);
+	});
+	$(function(){
+		var msg=$("#f").serializeArray();
+		console.info(msg);
+	});
+</script>
+</head>
+<body>
+	<form id="f" action="#" method="post">
+		username:<input type="text" name="username" value="tom"><br>
+		password:<input type="password" name="password" value="321"><br>
+		<input type="submit" value="login">
+	</form>
+</body>
+</html>

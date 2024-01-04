@@ -18,6 +18,7 @@ import com.itheima.servlet.demo.fastjson.domain.Project01;
 public class ProductServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//String callback = request.getParameter("callback");
 		request.setCharacterEncoding("utf-8");
 		
 		Project01 project01 = new Project01();
@@ -39,7 +40,8 @@ public class ProductServlet extends HttpServlet {
 		//2.使用fastjson讲 project01 转换成JSON数据
 		String json = JSONObject.toJSONString(list);
 		response.setCharacterEncoding("utf-8");
-		response.getWriter().write(json);
+		//response.getWriter().write(callback+"("+json+")");
+		response.getWriter().write("cb"+"("+json+")");
 		//System.out.println("json");
 	}
 

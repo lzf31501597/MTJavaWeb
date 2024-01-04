@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsonp跨域解决原理</title>
+<script type="text/javascript" src="/javaweb/js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	//原理即使我们使用js代码，在我们的页面上，添加一个新的Script标签
+	function addScript(src){
+		var script = document.createElement("script");
+		script.setAttribute("type","text/javascript");
+		script.src=src;
+		document.body.appendChild(script);
+	}
+	window.onload=function(){
+		addScript("http://localhost:8080/javaweb/ProductServlet?callback=cb");	
+	};
+	function cb(data){
+		var jsonObj=eval(data);
+		alert(jsonObj[0].name);
+	}
+</script>
+</head>
+<body>
+	<!-- <script type="text/javascript" src=""></script> -->
+</body>
+</html>

@@ -89,4 +89,14 @@
     <servlet-name>XmlServlet</servlet-name>
     <url-pattern>/XmlServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProServlet</display-name>
+    <servlet-name>ProServlet</servlet-name>
+    <servlet-class>com.itheima.servlet.demo.bootstrap.web.ProServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProServlet</servlet-name>
+    <url-pattern>/ProServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
