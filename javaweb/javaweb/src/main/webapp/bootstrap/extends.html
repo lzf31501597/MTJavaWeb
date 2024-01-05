@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="/javaweb/bootstrap/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$.extend({
+		maxValue:function(a,b){
+			return a>b?a:b;
+		},
+		
+		minValue:function(a,b){
+			return a>b?b:a;
+		}
+	});
+	
+	$(function(){
+		alert($.maxValue(10,20));
+		alert($.minValue(10,20));
+	});
+	
+	
+	$.fn.extend({
+		serializeJson:function(a,b){
+			
+			var json={};
+			var msg=this.serializeArray();
+			console.info(msg);
+			$(msg).each(function(){
+				if(json[this.name]){
+					if(!json[this.name].push){
+						json[this.name]=[json[this.name]];
+					}
+					json[this.name].push(this.value||'');
+				}else{
+					json[this.name]=this.value||'';
+				}
+				
+			});
+			return json;
+		}
+	});
+	
+	$(function(){
+		var json=$("#f").serializeJson();
+		console.info(json);
+	});
+</script>
+</head>
+<body>
+	<form id="f" action="#" method="post">
+		username:<input type="text" name="username" value="tom"><br>
+		password:<input type="password" name="password" value="321"><br>
+		hobby:<input type="checkbox" name="hobby" value="eat" checked="checked">吃
+				<input type="checkbox" name="hobby" value="drink" checked="checked">喝
+				<input type="checkbox" name="hobby" value="play" checked="checked">玩
+				<input type="checkbox" name="hobby" value="happy" checked="checked">乐<br>
+		<input type="submit" value="login">
+	</form>
+</body>
+</html>
