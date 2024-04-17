@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--配置目标类-->
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl"></bean>
+    <!--配置通知类-->
+    <bean id="myAdvice" class="com.itheima.advice.MyAdvice"></bean>
+
+    <!--<bean class="com.itheima.processor.MorkAopBeanPostProcessor"></bean>
+
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>-->
+
+    <!--配置aop-->
+    <aop:config>
+        <!--配置切点表达式，目的是要指定哪些方法被增强-->
+        <aop:pointcut id="myPointcut" expression="execution(void com.itheima.service.impl.UserServiceImpl.show1())"/>
+        <aop:pointcut id="myPointcut2" expression="execution(void com.itheima.service.impl.UserServiceImpl.show2())"/>
+        <aop:pointcut id="myPointcut3" expression="execution(void com.itheima.service.impl.UserServiceImpl.show３())"/>
+        <!--配置切入，目的是要执行哪些切点，与那些通知进行结合-->
+        <!--<aop:aspect ref="myAdvice">
+            &lt;!&ndash;前置通知&ndash;&gt;
+            <aop:before method="beforeAdvice" pointcut-ref="myPointcut"/>
+            &lt;!&ndash;后置通知&ndash;&gt;
+            <aop:after method="afterAdvice" pointcut-ref="myPointcut"/>
+        </aop:aspect>
+        <aop:aspect ref="myAdvice">
+            <aop:before method="beforeAdvice" pointcut-ref="myPointcut2"/>
+            <aop:after method="afterAdvice" pointcut="execution(void com.itheima.service..impl.UserServiceImpl.show2(..))"/>
+        </aop:aspect>-->
+
+        <aop:aspect ref="myAdvice">
+            <aop:before method="beforeAdvice" pointcut-ref="myPointcut2"/>
+            <!--环绕通知-->
+            <aop:around method="around" pointcut-ref="myPointcut2"/>
+            <!--异常抛出通知-->
+            <aop:after-throwing method="afterThrowingAdvice" pointcut-ref="myPointcut2" throwing="e"/>
+            <!--最终通知-->
+            <!--<aop:after method="afterAdvice" pointcut="execution(void com.itheima.service..impl.UserServiceImpl.show2(..))"/>-->
+            <aop:after method="afterAdvice" pointcut="execution(void com.itheima.service..impl.*.*(..))"/>
+        </aop:aspect>
+
+
+    </aop:config>
+
+</beans>
