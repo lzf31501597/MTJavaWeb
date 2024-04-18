@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/mvc/spring-context.xsd">
+
+    <!--静态工厂方法-->
+    <bean id="inputS" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">
+        <constructor-arg name="resource" value="mybatis-config.xml"></constructor-arg>
+    </bean>
+    <!--无参构造实例化-->
+    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"></bean>
+    <!--实例工厂方法-->
+    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">
+        <constructor-arg name="inputStream" ref="inputS"></constructor-arg>
+    </bean>
+
+
+    <!-- 配制日期对象
+    <bean id="simpleDateFormat" class="java.text.SimpleDateFormat">
+        <constructor-arg name="pattern" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>
+    </bean>
+    <bean id="date" factory-bean="simpleDateFormat" factory-method="parse">
+        <constructor-arg name="source" value="2024-02-21 12:00:00"></constructor-arg>
+    </bean>
+
+    &lt;!&ndash;配置数据源信息&ndash;&gt;
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/tmp"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="321321321"></property>
+    </bean>
+    &lt;!&ndash;配置Connection&ndash;&gt;
+    <bean id="clazz" class="java.lang.Class" factory-method="forName">
+        <constructor-arg name="className" value="com.mysql.jdbc.Driver"></constructor-arg>
+    </bean>
+    <bean id="connection" class="java.sql.DriverManager" factory-method="getConnection" scope="prototype">
+        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/tmp"></constructor-arg>
+        <constructor-arg name="user" value="root"></constructor-arg>
+        <constructor-arg name="password" value="321321321"></constructor-arg>
+    </bean>-->
+
+    <!--通过import引入其他模块的配置文件-->
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl03"></bean>
+    <bean id="userDao" name="aaa,bbb" class="com.itheima.dao.impl.UserDaoImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+</beans>

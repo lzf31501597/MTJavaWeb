@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/mvc/spring-context.xsd">
+
+    <dubbo:application name="sss"></dubbo:application>
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <context:property-placeholder></context:property-placeholder>
+
+    <!--通过import引入其他模块的配置文件-->
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl03"></bean>
+    <bean id="userDao" name="aaa,bbb" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+
+    <!--<bean id="userService" class="com.itheima.service.impl.UserServiceImpl03"></bean>
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+
+    <beans profile="dev">
+        <bean id="userService01" class="com.itheima.service.impl.UserServiceImpl03"></bean>
+    </beans>
+    <beans profile="test">
+        <bean id="userDao01" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+    </beans>-->
+
+
+</beans>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns:haohao="http://www.itheima.com/haohao"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/mvc/spring-context.xsd
+       http://www.itheima.com/haohao
+       http://www.itheima.com/haohao/haohao-annotation.xsd">
+
+    <!--使用自定义标签-->
+    <haohao:annotation-driver></haohao:annotation-driver>
+
+    <dubbo:application name="dubbo1-consumer"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+    <dubbo:annotation package="com.itheima.controller"/>
+    <dubbo:consumer check="dalse" timeout="1000" retries="0"/>
+
+    <!--加载properties文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!--配置数据源信息-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+
+    <!--配置SqlSessionFactory，将 SqlSessionFactory存储到spring容器-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--配置MapperScannerConfigurer， 扫描指定的包，产生Mapper对象存储到spring容器-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.itheima.mapper"></property>
+    </bean>
+
+    <!--通过import引入其他模块的配置文件-->
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl12">
+        <property name="userMapper" ref="userMapper"></property>
+    </bean>
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+
+</beans>
