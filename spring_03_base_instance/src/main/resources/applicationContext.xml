@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1,导入Spring的坐标spring-context，对应版本是5.2.10.RELEASE-->
+
+    <!--2，配置bean bean标签表示配置bean
+            id属性表示给bean起名字
+             class属性表示给bean定义类型
+             scope="singleton" 默认单例 prototype：非单例-->
+
+    <!--方式1：构造方法实例化bean-->
+    <!--<bean id="bookDao" name="dao" class="com.itheima.dao.impl.BookDaoImpl"/>-->
+
+    <!--方式2：使用静态工厂实例化bean-->
+    <!--<bean id="orderDao" class="com.itheima.factory.OrderDaoFactory" factory-method="getOrderDao"/>-->
+
+    <!--方式3：使用实例工厂实例化bean-->
+    <!--<bean id="userFavtory" class="com.itheima.factory.UserDaoFactory"/>
+    <bean id="userDao" factory-method="getUserDao" factory-bean="userFavtory"/>-->
+
+    <!--方式4：使用FactoryBean实例化bean-->
+    <bean id="userDao" class="com.itheima.factory.UserDaoFactoryBean"/>
+</beans>
