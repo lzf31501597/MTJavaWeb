@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao3" class="com.itheima.factory.MyBeanFactory3"></bean>
+
+    <bean id="myBeanFactory2" class="com.itheima.factory.MyBeanFactory2"></bean>
+
+    <bean id="userDao2" factory-bean="myBeanFactory2" factory-method="userDao">
+        <constructor-arg name="username" value="haohao"></constructor-arg>
+    </bean>
+
+    <bean id="userDao1" class="com.itheima.factory.MyBeanFactory1" factory-method="userDao">
+        <constructor-arg name="name" value="haohao"></constructor-arg>
+        <constructor-arg name="age" value="15"></constructor-arg>
+    </bean>
+
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl">
+        <constructor-arg name="name" value="haohao"></constructor-arg>
+        <constructor-arg name="age" value="15"></constructor-arg>
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+</beans>
