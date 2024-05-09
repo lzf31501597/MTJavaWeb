@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl">
+        <property name="arrary">
+            <array>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+                <value>400</value>
+                <value>500</value>
+                <!--<ref bean="beanId"/> 注入bean初始化数据-->
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>itheima</value>
+                <value>itcast</value>
+                <value>boxuezhu</value>
+                <value>chuanzhihui</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>itheima</value>
+                <value>itcast</value>
+                <value>boxuezhu</value>
+                <value>boxuezhu</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="country" value="china"></entry>
+                <entry key="province" value="henan"></entry>
+                <entry key="city" value="kaifeng"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="country">china</prop>
+                <prop key="province">henan</prop>
+                <prop key="city">kaifeng</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--<bean id="bookService" name="service service2 bookEbi" class="com.itheima.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"/>
+    </bean>-->
+
+</beans>
