@@ -11,13 +11,13 @@ import java.util.*;
  * @Description
  */
 public class BookDaoImpl implements BookDao {
-    public BookDaoImpl(String name) {
+    public BookDaoImpl() {
         System.out.println("constructor");
     }
 
 
     @Override
     public void save() {
-        System.out.println("book dao save()  " + name);
+        System.out.println("book dao save()  ");
     }
 }

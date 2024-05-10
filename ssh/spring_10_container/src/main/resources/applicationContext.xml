@@ -7,47 +7,6 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--管理DruidDataSource对象
-    <bean id="dataSource1" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="${jdbc.driverClass}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-    </bean>
-    &lt;!&ndash;管理c3p0对象&ndash;&gt;
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/tmp"/>
-        <property name="user" value="root"/>
-        <property name="password" value="321321321"/>
-        <property name="maxPoolSize" value="1000"/>
-    </bean>-->
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl" lazy-init="true"/>
 
-    <!--1.开启context命名空间
-        2.使用context空间加载properties文件
-        3.使用属性占位${},读取properties文件中的属性值
-    -->
-    <!--<context:property-placeholder location="jdbc.properties" system-properties-mode="NEVER"/>-->
-    <!--<context:property-placeholder location="jdbc.properties, jdbc2.properties" system-properties-mode="NEVER"/>-->
-    <!--<context:property-placeholder location="*.properties" system-properties-mode="NEVER"/>-->
-    <context:property-placeholder location="classpath:*.properties" system-properties-mode="NEVER"/>
-
-    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="${jdbc.driver}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-    </bean>
-
-    <!--<context:property-placeholder location="c3p0.properties"/>
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="${jdbc.driverClass}"/>
-        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
-        <property name="user" value="${jdbc.user}"/>
-        <property name="password" value="${jdbc.password}"/>
-    </bean>-->
-
-    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl">
-        <property name="name" value="${jdbc.username}"/>
-    </bean>
 </beans>

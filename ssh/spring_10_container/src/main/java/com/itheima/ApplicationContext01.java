@@ -24,7 +24,7 @@ public class ApplicationContext01 {
         System.out.println(dataSource);*/
         //BookDao bookDao = (BookDao) cpxa.getBean("bookDao");
         //BookDao bookDao = cpxa.getBean("bookDao", BookDao.class);
-//        BookDao bookDao = cpxa.getBean(BookDao.class);
-//        bookDao.save();
+        /*BookDao bookDao = cpxa.getBean(BookDao.class);
+        bookDao.save();*/
     }
 }
