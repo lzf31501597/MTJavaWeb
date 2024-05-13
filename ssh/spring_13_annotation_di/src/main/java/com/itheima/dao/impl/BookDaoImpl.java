@@ -20,7 +20,8 @@ import javax.annotation.PreDestroy;
 //@Controller
 //@Scope("singleton")//默认singleton单例, prototype非单例
 public class BookDaoImpl implements BookDao {
-    @Value("itheima")
+    //@Value("itheima")
+    @Value("${name}")
     private String name;
 
     @Override

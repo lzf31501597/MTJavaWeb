@@ -2,6 +2,7 @@ package com.itheima.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * @author
@@ -11,7 +12,10 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration //相当于xml配置文件--没有配置的
-//@ComponentScan("com.itheima")
-@ComponentScan({"com.itheima.service","com.itheima.dao"})
+@ComponentScan("com.itheima")
+//@ComponentScan({"com.itheima.service","com.itheima.dao"})
+@PropertySource("classpath:jdbc.properties")
+//@PropertySource("jdbc.properties")
+//@PropertySource({"jdbc.properties", "jdbc.properties", "jdbc.properties"})
 public class SpringConfig {
 }
