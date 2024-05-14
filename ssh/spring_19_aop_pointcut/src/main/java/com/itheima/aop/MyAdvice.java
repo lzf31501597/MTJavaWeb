@@ -20,7 +20,14 @@ public class MyAdvice {
     //@Pointcut("execution(void com.itheima.dao.BookDao.update())")切入点
     //@Pointcut("execution(void com.itheima.dao.impl.BookDaoImpl.update())")//切入点
     //@Pointcut("execution(* com.itheima.dao.BookDao.update(*))")//切入点  no
-    @Pointcut("execution(* com.*.*.*.update())")//切入点
+    //@Pointcut("execution(* com.*.*.*.update())")//切入点
+    //@Pointcut("execution(* *..update())")//切入点
+    //@Pointcut("execution(* *..u*(..))")//切入点
+    //@Pointcut("execution(* *..*e(..))")//切入点
+    //@Pointcut("execution(void com..*())")//切入点
+    //@Pointcut("execution(* com.itheima.*.*Service.find*(..))")//切入点
+    @Pointcut("execution(* com.itheima.*.*Service.save(..))")//切入点
+
     private void pt(){}
 
     @Before("pt()")

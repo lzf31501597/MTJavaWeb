@@ -15,7 +15,8 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext ac= new AnnotationConfigApplicationContext(SpringConfig.class);
         BookDao bookDao = ac.getBean(BookDao.class);
-        bookDao.save();
+        int b = bookDao.select();
+        System.out.println(b);
         /*System.out.println(bookDao);
         System.out.println(bookDao.getClass());*/
     }
