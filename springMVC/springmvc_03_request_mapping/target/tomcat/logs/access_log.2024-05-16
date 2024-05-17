@@ -1,0 +1,15 @@
+127.0.0.1 - - [16/May/2024:14:46:49 +0900] "GET /save HTTP/1.1" 404 949 http-bio-80-exec-1 148
+127.0.0.1 - - [16/May/2024:14:46:58 +0900] "GET /boo/save HTTP/1.1" 404 949 http-bio-80-exec-2 9
+127.0.0.1 - - [16/May/2024:14:47:06 +0900] "GET /book/save HTTP/1.1" 200 32 http-bio-80-exec-3 189
+127.0.0.1 - - [16/May/2024:14:47:12 +0900] "GET /book/delete HTTP/1.1" 200 34 http-bio-80-exec-4 3
+127.0.0.1 - - [16/May/2024:14:47:18 +0900] "GET /user/delete HTTP/1.1" 200 29 http-bio-80-exec-5 5
+127.0.0.1 - - [16/May/2024:14:47:24 +0900] "GET /user/save HTTP/1.1" 200 27 http-bio-80-exec-6 5
+127.0.0.1 - - [16/May/2024:14:49:31 +0900] "GET /user/save HTTP/1.1" 200 27 http-bio-80-exec-1 235
+127.0.0.1 - - [16/May/2024:14:49:31 +0900] "GET /user/save HTTP/1.1" 200 27 http-bio-80-exec-3 236
+127.0.0.1 - - [16/May/2024:14:49:31 +0900] "GET /user/save HTTP/1.1" 200 27 http-bio-80-exec-2 251
+127.0.0.1 - - [16/May/2024:14:49:39 +0900] "GET /user/delete HTTP/1.1" 200 29 http-bio-80-exec-5 5
+127.0.0.1 - - [16/May/2024:14:49:48 +0900] "GET /book/delete HTTP/1.1" 200 34 http-bio-80-exec-7 5
+127.0.0.1 - - [16/May/2024:14:49:51 +0900] "GET /book/save HTTP/1.1" 200 32 http-bio-80-exec-8 5
+127.0.0.1 - - [16/May/2024:14:51:43 +0900] "GET /book/save HTTP/1.1" 200 32 http-bio-80-exec-10 2
+0:0:0:0:0:0:0:1 - - [16/May/2024:14:53:53 +0900] "POST /book/save HTTP/1.1" 200 32 http-bio-80-exec-1 2
+0:0:0:0:0:0:0:1 - - [16/May/2024:14:53:58 +0900] "GET /book/save HTTP/1.1" 200 32 http-bio-80-exec-1 2
