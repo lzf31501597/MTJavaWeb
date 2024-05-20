@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @Description
  */
 @Configuration
-@ComponentScan("com.itheima.controller")
+@ComponentScan({"com.itheima.controller", "com.itheima.config"})
 @EnableWebMvc
 public class SpringMvcConfig {
 

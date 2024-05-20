@@ -30,12 +30,14 @@ public class BookController {
         List<Book> bookList = new ArrayList<>();
 
         Book book = new Book();
+        book.setId(1);
         book.setType("计算机");
         book.setName("springMvc入门教程");
         book.setDescription("小试牛刀");
         bookList.add(book);
 
         Book book1 = new Book();
+        book1.setId(2);
         book1.setType("计算机");
         book1.setName("springMvc实战教程");
         book1.setDescription("一代宗师");

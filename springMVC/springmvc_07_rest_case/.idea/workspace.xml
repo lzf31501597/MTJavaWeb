@@ -31,28 +31,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Maven. [tomcat7:run].executor": "Run",
-    "Maven.springmvc_01_quickstart [tomcat7:run-war].executor": "Run",
-    "Maven.springmvc_01_quickstart [tomcat7:run].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springMVC/springmvc_07_rest_case",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/dreamtank77/IdeaProjects/springMVC/springmvc_01_quickstart/src/main/java/com/itheima/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15527344",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [tomcat7:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springmvc_01_quickstart [tomcat7:run-war].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springmvc_01_quickstart [tomcat7:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dreamtank77/IdeaProjects/springMVC/springmvc_07_rest_case&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/dreamtank77/IdeaProjects/springMVC/springmvc_01_quickstart/src/main/java/com/itheima/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/controller" />
@@ -62,6 +63,8 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/service/impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../springmvc_08_ssm" />
+      <recent name="$PROJECT_DIR$/../springmvc_08_ssm/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -159,7 +162,20 @@
       <workItem from="1715838913183" duration="14913000" />
       <workItem from="1715923144437" duration="3765000" />
       <workItem from="1715931020645" duration="4420000" />
-      <workItem from="1715936973474" duration="1480000" />
+      <workItem from="1715936973474" duration="6525000" />
+      <workItem from="1716174190310" duration="361000" />
+      <workItem from="1716174569914" duration="78000" />
+      <workItem from="1716174790273" duration="36000" />
+      <workItem from="1716174900553" duration="40000" />
+      <workItem from="1716175037118" duration="56000" />
+      <workItem from="1716175097976" duration="69000" />
+      <workItem from="1716178016112" duration="177000" />
+      <workItem from="1716178536245" duration="97000" />
+      <workItem from="1716178670672" duration="15000" />
+      <workItem from="1716179657789" duration="107000" />
+      <workItem from="1716183190154" duration="205000" />
+      <workItem from="1716183490849" duration="274000" />
+      <workItem from="1716183785947" duration="54000" />
     </task>
     <servers />
   </component>

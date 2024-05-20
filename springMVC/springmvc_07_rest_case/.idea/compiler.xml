@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc_05_response" />
-        <module name="springmvc_07_rest_case" />
         <module name="springmvc_01_quickstart" />
         <module name="springmvc_03_request_mapping" />
         <module name="springmvc_04_request_param" />
@@ -15,6 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springmvc_01_quickstart01" target="1.8" />
+      <module name="springmvc_07_rest_case" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

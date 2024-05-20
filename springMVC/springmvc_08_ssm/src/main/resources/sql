@@ -1,0 +1,20 @@
+create table tb_book(
+id int(11) primary key auto_increment not null,
+type varchar(20),
+name varchar(50),
+description varchar(255));
+
+insert into tb_book(type, name, description) values("计算机理论", "Spring实战 第5版", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "Spring 5核心原理与30个类手写实战", "十年沉淀之作，手写Spring精华思想");
+insert into tb_book(type, name, description) values("计算机理论", "Spring5 设计模式", "深入Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "Spring MVC+MyBatis开发从入门到项目实战", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "轻量级Java Web企业应用实战", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "Java核心技术 卷I基础知识(原书第11版)", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "深入理解Java虚拟机", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "Java编程思想（第4版）", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("计算机理论", "零基础学Java（全彩版）", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("市场营销", "直播就该这么做：主播高效沟通实战指南", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("市场营销", "直播销讲实战一本通", "Spring入门经典教程，深入理解Spring原理技术内幕");
+insert into tb_book(type, name, description) values("市场营销", "直播带货：淘宝带货：淘宝、天猫直播从新手到高手", "Spring入门经典教程，深入理解Spring原理技术内幕");
+
+select * from tb_book;
