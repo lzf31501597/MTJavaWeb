@@ -41,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springMVC",
+    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springMVC/springmvc_07_rest_case",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -55,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/controller" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/itheima/service/impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -158,7 +158,8 @@
       <workItem from="1715765153783" duration="903000" />
       <workItem from="1715838913183" duration="14913000" />
       <workItem from="1715923144437" duration="3765000" />
-      <workItem from="1715931020645" duration="5171000" />
+      <workItem from="1715931020645" duration="4420000" />
+      <workItem from="1715936973474" duration="1480000" />
     </task>
     <servers />
   </component>
