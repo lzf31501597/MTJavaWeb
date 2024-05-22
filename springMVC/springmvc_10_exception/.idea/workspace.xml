@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd059a7a-725f-4551-9e03-7eb2ef52f97b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="MavenRunConfiguration" name=" [tomcat7:run]" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2gUY1g8UHBvbtOV9csLnOplBNK9" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.BookServiceTest.executor": "Run",
+    "JUnit.BookServiceTest.testGetAll.executor": "Run",
+    "JUnit.BookServiceTest.testGetById.executor": "Debug",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven. [tomcat7:run].executor": "Run",
+    "Maven.springmvc_01_quickstart [tomcat7:run-war].executor": "Run",
+    "Maven.springmvc_01_quickstart [tomcat7:run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springMVC",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/dreamtank77/IdeaProjects/springMVC/springmvc_01_quickstart/src/main/java/com/itheima/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/itheima/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/itheima/config" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.config" />
+      <recent name="com.itheima.service" />
+      <recent name="com.itheima.controller" />
+      <recent name="com.itheima.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven. [tomcat7:run]">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
+      <module name="springmvc_01_quickstart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc_08_ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.service" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.service.BookServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc_08_ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.service" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc_08_ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.service" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="testGetById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springmvc_03_request_mapping" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springmvc_03_request_mapping" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name=" [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.BookServiceTest" />
+      <item itemvalue="JUnit.BookServiceTest.testGetAll" />
+      <item itemvalue="JUnit.BookServiceTest.testGetById" />
+      <item itemvalue="Maven. [tomcat7:run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="JUnit.BookServiceTest.testGetAll" />
+        <item itemvalue="JUnit.BookServiceTest.testGetById" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-3183f394aec4-8ce719b4" />
+        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-96c0d24d" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd059a7a-725f-4551-9e03-7eb2ef52f97b" name="Changes" comment="" />
+      <created>1715753418936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715753418936</updated>
+      <workItem from="1715753420981" duration="1728000" />
+      <workItem from="1715755163975" duration="3239000" />
+      <workItem from="1715761238246" duration="626000" />
+      <workItem from="1715761874716" duration="2561000" />
+      <workItem from="1715765153783" duration="903000" />
+      <workItem from="1715838913183" duration="14913000" />
+      <workItem from="1715923144437" duration="3765000" />
+      <workItem from="1715931020645" duration="4420000" />
+      <workItem from="1715936973474" duration="6525000" />
+      <workItem from="1716174190310" duration="361000" />
+      <workItem from="1716174569914" duration="78000" />
+      <workItem from="1716174790273" duration="36000" />
+      <workItem from="1716174900553" duration="40000" />
+      <workItem from="1716175037118" duration="56000" />
+      <workItem from="1716175097976" duration="69000" />
+      <workItem from="1716178016112" duration="177000" />
+      <workItem from="1716178536245" duration="97000" />
+      <workItem from="1716178670672" duration="15000" />
+      <workItem from="1716178753258" duration="900000" />
+      <workItem from="1716179923377" duration="9945000" />
+      <workItem from="1716193778103" duration="3581000" />
+      <workItem from="1716255909217" duration="10907000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
