@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/maven_03_pojo/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven_04_dao" />
+        <module name="maven_02_ssm" />
+        <module name="maven_03_pojo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="ear" target="17" />
+      <module name="ejbs" target="17" />
+      <module name="logging" target="17" />
+      <module name="maven_02_ssm (1)" target="17" />
+      <module name="primary-source" target="17" />
+      <module name="projects" target="17" />
+      <module name="servlet" target="17" />
+      <module name="servlets" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
