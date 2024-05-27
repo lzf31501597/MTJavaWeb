@@ -16,7 +16,7 @@
   <parent>
     <groupId>com.itheima</groupId>
     <artifactId>maven_01_parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <!--配置父工程的pom文件-->
     <relativePath>../maven_01_parent/pom.xml</relativePath>
   </parent>

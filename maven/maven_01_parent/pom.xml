@@ -4,7 +4,7 @@
 
    <groupId>com.itheima</groupId>
    <artifactId>maven_01_parent</artifactId>
-   <version>1.0-SNAPSHOT</version>
+   <version>1.0-RELEASE</version>
    <packaging>pom</packaging>
 
    <properties>
@@ -37,11 +37,11 @@
          <artifactId>maven_03_pojo</artifactId>
          <version>1.0-SNAPSHOT</version>
       </dependency>-->
-      <dependency>
+      <!--<dependency>
          <groupId>com.itheima</groupId>
          <artifactId>maven_04_dao</artifactId>
          <version>1.0-SNAPSHOT</version>
-      </dependency>
+      </dependency>-->
 
       <dependency>
          <groupId>javax.servlet</groupId>
@@ -169,4 +169,15 @@
       </plugins>
    </build>
 
+   <!--配置当前工程保存在私服中的具体位置-->
+   <distributionManagement>
+      <repository>
+         <id>itheima-Release</id>
+         <url>http://localhost:8081/repository/itheima-Release/</url>
+      </repository>
+      <snapshotRepository>
+         <id>itheima-Snapshot</id>
+         <url>http://localhost:8081/repository/itheima-Snapshot/</url>
+      </snapshotRepository>
+   </distributionManagement>
 </project>

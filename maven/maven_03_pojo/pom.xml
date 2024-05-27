@@ -11,6 +11,12 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  <parent>
+    <groupId>com.itheima</groupId>
+    <artifactId>maven_01_parent</artifactId>
+    <version>1.0-RELEASE</version>
+    <!--配置父工程的pom文件-->
+    <relativePath>../maven_01_parent/pom.xml</relativePath>
+  </parent>
 
 </project>
