@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="srpingboot_01_quickstart-0.0.1-SNAPSHOT1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/srpingboot_02_base_config/target/srpingboot_01_quickstart-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
