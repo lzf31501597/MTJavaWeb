@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/srpingboot_02_base_config/pom.xml" />
         <option value="$PROJECT_DIR$/srpingboot_03_read_data/pom.xml" />
         <option value="$PROJECT_DIR$/srpingboot_04_profile/pom.xml" />
+        <option value="$PROJECT_DIR$/srpingboot_05_maven_springboot_profile/pom.xml" />
+        <option value="$PROJECT_DIR$/srpingboot_05_maven_springboot_profile/springboot_06_config_file/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_06_config_file/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_07_test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_08_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_09_ssm/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

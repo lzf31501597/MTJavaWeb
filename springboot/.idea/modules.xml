@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot_06_config_file/springboot_06_config_file.iml" filepath="$PROJECT_DIR$/springboot_06_config_file/springboot_06_config_file.iml" />
       <module fileurl="file://$PROJECT_DIR$/srpingboot_01_quickstart/srpingboot_01_quickstart.iml" filepath="$PROJECT_DIR$/srpingboot_01_quickstart/srpingboot_01_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/srpingboot_02_base_config/srpingboot_02_base_config.iml" filepath="$PROJECT_DIR$/srpingboot_02_base_config/srpingboot_02_base_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/srpingboot_03_read_data/srpingboot_03_read_data.iml" filepath="$PROJECT_DIR$/srpingboot_03_read_data/srpingboot_03_read_data.iml" />
       <module fileurl="file://$PROJECT_DIR$/srpingboot_04_profile/srpingboot_04_profile.iml" filepath="$PROJECT_DIR$/srpingboot_04_profile/srpingboot_04_profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srpingboot_05_maven_springboot_profile/srpingboot_05_maven_springboot_profile.iml" filepath="$PROJECT_DIR$/srpingboot_05_maven_springboot_profile/srpingboot_05_maven_springboot_profile.iml" />
     </modules>
   </component>
 </project>
