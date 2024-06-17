@@ -1,0 +1,40 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reggie_take_out
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 321321321
+#      #以下为druid配置，可以共用datasource中的druid配置，需要覆盖时再重新配置
+#      filters: stat
+#      initial-size: 1
+#      max-active: 20
+#      min-idle: 1
+#      max-wait: 60000
+      use-ping-method: false
+#  devtools:
+#    restart: # 是否开启DevTools自动重启功能，默认为true
+      #enabled: true
+      # 配置触发重启的文件路径，多个路径使用逗号分隔，默认为src/main/java,src/main/resources
+      #additional-paths: src/main/java #,src/main/resources
+      # 配置触发重启的文件扩展名，默认为.trigger
+#      trigger-file: .trigger,.java
+      # 配置重启时需要排除的文件路径，多个路径使用逗号分隔，默认为META-INF/maven, META-INF/resources, resources, static, public, templates
+ #     exclude: WEB-INF/**,META-INF/**,resources/**,static/**,public/**,templates/**
+
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+
+reggie:
+  path: /Users/dreamtank77/IdeaProjects/reggie_sales/reggie_take_out/src/main/resources/backend/page/images/
+
