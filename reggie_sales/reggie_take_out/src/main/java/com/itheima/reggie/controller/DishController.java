@@ -6,6 +6,7 @@ import com.itheima.reggie.common.R;
 import com.itheima.reggie.dto.DishDto;
 import com.itheima.reggie.entity.Category;
 import com.itheima.reggie.entity.Dish;
+import com.itheima.reggie.entity.DishFlavor;
 import com.itheima.reggie.service.CategoryService;
 import com.itheima.reggie.service.DishFlavorService;
 import com.itheima.reggie.service.DishService;
@@ -15,6 +16,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -70,7 +72,7 @@ public class DishController {
         log.info("page = {}, pageSize = {}, name = {}", page, pageSize, name);
 
         //构建分页构造器
-        Page<Dish> pageInfo = new Page(page, pageSize);
+        Page<Dish> pageInfo = new Page<>(page, pageSize);
         Page<DishDto> dishDtoPage = new Page<>();
 
         //构建条件构造器
@@ -92,7 +94,8 @@ public class DishController {
 
             BeanUtils.copyProperties(item, dishDto);
 
-            Long categoryId = item.getCategoryId();
+            Long categoryId = item.getCategoryId();//分类id
+            //根据分类id查询分类对象
             Category category = categoryService.getById(categoryId);
             String categoryName = category.getName();
             dishDto.setCategoryName(categoryName);
@@ -109,37 +112,65 @@ public class DishController {
 
     /**
      * @Author
-     * @Description 根据id查询菜品信息
+     * @Description 根据id查询菜品信息和对应的口味信息
      * @Date 16:30 2024/06/06
      * @param id
      * @return
      **/
     @GetMapping("/{id}")
-    public R<Dish> getById(@PathVariable Long id){
+    public R<DishDto> getById(@PathVariable Long id){
         log.info("根据id查询菜品信息！！！{}"+ id);
 
-        Dish dish = dishService.getById(id);
+        DishDto dishDto = dishService.getByIdWithFlavor(id);
 
-        return R.success(dish);
+        return R.success(dishDto);
     }
 
 
     /**
      * @author
-     * @description
-     * @date
-     * @param dish
+     * @description 修改菜品
+     * @param dishDto
      * @return
      **/
     @PutMapping
-    public R<Dish> update(@RequestBody Dish dish){
-        log.info(dish.toString());
+    public R<String> update(@RequestBody DishDto dishDto){
+        log.info(dishDto.toString());
 
-        dishService.updateById(dish);
+        dishService.updateWithFlavor(dishDto);
 
-        return R.success(dish);
+        return R.success("修改菜品成功");
 
     }
 
+
+    @PostMapping("/status/{status, ids}")
+    public R<String> updateStatus(@PathVariable int status,@PathVariable List<Long> ids){
+        log.info("修改菜品状态的 ids:{}"+ ids);
+
+        LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<Dish>();
+
+        Iterator<Long> iterator = ids.iterator();
+        while (iterator.hasNext()){
+            Long dishId = iterator.next();
+            dishLambdaQueryWrapper.eq(Dish::getId, dishId);
+            Dish entity = dishLambdaQueryWrapper.getEntity();
+            entity.setStatus(status);
+        }
+
+        dishService.update(dishLambdaQueryWrapper);
+
+        return R.success("修改菜品状态成功！！！");
+    }
+
+    @DeleteMapping()
+    public R<String> deleteByIds(@PathVariable List<Long> ids){
+        log.info("删除菜品的 ids:{}"+ ids);
+
+        dishService.removeByIds(ids);
+        dishFlavorService.removeByIds(ids);
+
+        return R.success("删除菜品状态成功！！！");
+    }
 
 }
