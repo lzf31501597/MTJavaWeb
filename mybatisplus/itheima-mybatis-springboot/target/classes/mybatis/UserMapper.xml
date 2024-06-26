@@ -7,4 +7,5 @@
     <select id="findById" resultType="User">
             select * from tb_user where id = #{id}
     </select>
+    <select id="findAllList" resultType="com.itheima.mp.pojo.User"></select>
 </mapper>

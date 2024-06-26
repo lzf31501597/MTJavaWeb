@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb000d3-f50f-4b46-8a4c-0cf5cbc7c336" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/Injectors/FindAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/Injectors/MySqlInjector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/ItheimaMybatisSpringbootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/enums/SexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/mapper/MyBaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/plugins/MyIntorceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/ItheimaMybatisSpringbootApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/TestActiveRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/TestIntorceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/log4j.properties" afterDir="false" />
-    </list>
+    <list default="true" id="8bb000d3-f50f-4b46-8a4c-0cf5cbc7c336" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,61 +43,61 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testAllEq.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testDelete.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteById.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteByIds.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteByMap.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testEq.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testFindById.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testInsert.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testLike.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testOr.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelect.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectAll.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectBatchIds.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectById.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectCount.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectList.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectOne.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectPage.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectt.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdate.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdateById.executor": "Run",
-    "JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdateWrapper.executor": "Run",
-    "JUnit.TestActiveRecord.testDelete.executor": "Run",
-    "JUnit.TestActiveRecord.testInsert.executor": "Run",
-    "JUnit.TestActiveRecord.testInsertAll.executor": "Run",
-    "JUnit.TestActiveRecord.testOracleInsertAll.executor": "Run",
-    "JUnit.TestActiveRecord.testSelect.executor": "Run",
-    "JUnit.TestActiveRecord.testSelectById.executor": "Run",
-    "JUnit.TestActiveRecord.testUpdate.executor": "Run",
-    "JUnit.TestIntorceptor.testInsertt.executor": "Run",
-    "JUnit.TestIntorceptor.testOracleInsertAll.executor": "Run",
-    "JUnit.TestIntorceptor.testSelect.executor": "Run",
-    "JUnit.TestIntorceptor.testSelectById.executor": "Run",
-    "JUnit.TestIntorceptor.testSelectBySex.executor": "Run",
-    "JUnit.TestIntorceptor.testUpdate.executor": "Run",
-    "JUnit.TestIntorceptor.testUpdateAll.executor": "Run",
-    "JUnit.TestIntorceptor.testUpdateVersion.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/mybatisplus/itheima-mybatis-springboot/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15527344",
-    "project.structure.side.proportion": "0.71875",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testAllEq.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteByIds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteByMap.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testEq.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testFindById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testLike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testOr.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectBatchIds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectCount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectOne.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdateById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ItheimaMybatisSpringbootApplicationTests.testUpdateWrapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testInsertAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testOracleInsertAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testSelectById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestActiveRecord.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testInsertt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testOracleInsertAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testSelectById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testSelectBySex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testUpdateAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestIntorceptor.testUpdateVersion.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dreamtank77/IdeaProjects/mybatisplus/itheima-mybatis-springboot/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.71875&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -138,7 +112,7 @@
       <recent name="com.itheima.mp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestIntorceptor.testSelectBySex">
+  <component name="RunManager" selected="JUnit.TestIntorceptor.testSelect">
     <configuration name="ItheimaMybatisSpringbootApplicationTests.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="itheima-mybatis-springboot" />
       <extension name="coverage">
@@ -187,7 +161,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIntorceptor.testOracleInsertAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntorceptor.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="itheima-mybatis-springboot" />
       <extension name="coverage">
         <pattern>
@@ -197,7 +171,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima.mp" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.mp.TestIntorceptor" />
-      <option name="METHOD_NAME" value="testOracleInsertAll" />
+      <option name="METHOD_NAME" value="testSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,20 +201,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TestIntorceptor.testSelect" />
       <item itemvalue="JUnit.TestIntorceptor.testSelectBySex" />
       <item itemvalue="JUnit.TestIntorceptor.testInsertt" />
       <item itemvalue="JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteById" />
       <item itemvalue="JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectById" />
-      <item itemvalue="JUnit.TestIntorceptor.testOracleInsertAll" />
       <item itemvalue="Spring Boot.ItheimaMybatisSpringbootApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestIntorceptor.testSelect" />
         <item itemvalue="JUnit.TestIntorceptor.testSelectBySex" />
         <item itemvalue="JUnit.TestIntorceptor.testInsertt" />
         <item itemvalue="JUnit.ItheimaMybatisSpringbootApplicationTests.testSelectById" />
         <item itemvalue="JUnit.ItheimaMybatisSpringbootApplicationTests.testDeleteById" />
-        <item itemvalue="JUnit.TestIntorceptor.testOracleInsertAll" />
       </list>
     </recent_temporary>
   </component>
@@ -266,6 +240,9 @@
       <workItem from="1719278698593" duration="6000" />
       <workItem from="1719278742806" duration="1877000" />
       <workItem from="1719280789007" duration="1412000" />
+      <workItem from="1719290351621" duration="723000" />
+      <workItem from="1719303071018" duration="480000" />
+      <workItem from="1719303559700" duration="22000" />
     </task>
     <servers />
   </component>

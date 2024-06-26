@@ -3,6 +3,8 @@ package com.itheima.mp.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.itheima.mp.pojo.User;
 
+import java.util.List;
+
 /**
  * @author
  * @version 1.0
@@ -12,4 +14,7 @@ import com.itheima.mp.pojo.User;
 public interface UserMapper extends MyBaseMapper<User> {
 
     User findById(Long id);
+
+    List<User> findAllList();
+
 }
