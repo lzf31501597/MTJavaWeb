@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b84cb11-4bc1-4d33-bc97-45f3dbb6be82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/Springboot0101QuickstartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/Springboot0101QuickstartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/main/java/com/itheima/Springboot14TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/test/java/com/itheima/ConfigurationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/test/java/com/itheima/PropertiesAndArgsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/test/java/com/itheima/WebTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_14_test/src/test/java/com/itheima/config/MsgConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../springboot_14_test" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,7 +40,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$USER_HOME$/apache-maven-3.9.6/maven-repo" />
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.9.6" />
         <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.9.6/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -65,55 +64,63 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApplicationTests.testGetAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApplicationTests.testGetBybook.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApplicationTests.testGetPage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IBookServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IBookServiceTests.testUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceTests.testGetPage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceTests.testUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Springboot04JunitApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Springboot04JunitApplicationTests.testSave.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Springboot05MybatisApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Springboot05MybatisPlusApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot_08_ssmp [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot_08_ssmp [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot_09_config [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot_09_config [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot_09_config [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConfigApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProfilesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Springboot0101QuickstartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Springboot01021QuickstartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Springboot0103QuickstartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Springboot0104QuickstartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Springboot09ConfigApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dreamtank77/IdeaProjects/springboot2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.6388889&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.ApplicationTests.executor": "Run",
+    "JUnit.ApplicationTests.testGetAll.executor": "Run",
+    "JUnit.ApplicationTests.testGetBybook.executor": "Run",
+    "JUnit.ApplicationTests.testGetPage.executor": "Run",
+    "JUnit.ConfigurationTests.executor": "Run",
+    "JUnit.IBookServiceTests.executor": "Run",
+    "JUnit.IBookServiceTests.testUpdate.executor": "Run",
+    "JUnit.PropertiesAndArgsTests.executor": "Run",
+    "JUnit.ServiceTests.executor": "Run",
+    "JUnit.ServiceTests.testGetPage.executor": "Run",
+    "JUnit.ServiceTests.testUpdate.executor": "Run",
+    "JUnit.Springboot04JunitApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Springboot04JunitApplicationTests.testSave.executor": "Run",
+    "JUnit.Springboot05MybatisApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Springboot05MybatisPlusApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Springboot13ConfigurationApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Springboot13ConfigurationApplicationTests.executor": "Run",
+    "JUnit.WebTests.executor": "Run",
+    "JUnit.WebTests.testConfiguration.executor": "Run",
+    "Maven.springboot_08_ssmp [clean].executor": "Run",
+    "Maven.springboot_08_ssmp [package].executor": "Run",
+    "Maven.springboot_09_config [clean].executor": "Run",
+    "Maven.springboot_09_config [compile].executor": "Run",
+    "Maven.springboot_09_config [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.ConfigApplication.executor": "Run",
+    "Spring Boot.ProfilesApplication.executor": "Run",
+    "Spring Boot.Springboot0101QuickstartApplication.executor": "Run",
+    "Spring Boot.Springboot01021QuickstartApplication.executor": "Run",
+    "Spring Boot.Springboot0103QuickstartApplication.executor": "Run",
+    "Spring Boot.Springboot0104QuickstartApplication.executor": "Run",
+    "Spring Boot.Springboot09ConfigApplication.executor": "Run",
+    "Spring Boot.Springboot13ConfigurationApplication.executor": "Run",
+    "Spring Boot.Springboot14TestApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springboot2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.6388889",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.itheima.controller" />
@@ -136,13 +143,13 @@
       <recent name="com" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.itheima.controller" />
       <recent name="com.itheima" />
+      <recent name="com.itheima.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="IBookServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_12_hot_deploy" />
+  <component name="RunManager" selected="JUnit.WebTests.testConfiguration">
+    <configuration name="ConfigurationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_14_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -150,14 +157,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.IBookServiceTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.ConfigurationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IBookServiceTests.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_12_hot_deploy" />
+    <configuration name="PropertiesAndArgsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_14_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -165,15 +172,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.IBookServiceTests" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.PropertiesAndArgsTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTests.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_12_hot_deploy" />
+    <configuration name="WebTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_14_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -181,15 +187,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.ServiceTests" />
-      <option name="METHOD_NAME" value="testGetPage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.WebTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTests.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_12_hot_deploy" />
+    <configuration name="WebTests.testConfiguration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_14_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -197,8 +202,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.ServiceTests" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.WebTests" />
+      <option name="METHOD_NAME" value="testConfiguration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,19 +236,6 @@
       <module name="springboot_09_config" />
       <option name="PROGRAM_PARAMETERS" value="--spring.config.location=classpath:/ebank.yml,classpath:/ebank-server.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.ConfigApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot_10_profiles" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.ProfilesApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -289,11 +281,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Springboot14TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot_14_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot14TestApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.IBookServiceTests" />
-      <item itemvalue="JUnit.IBookServiceTests.testUpdate" />
-      <item itemvalue="JUnit.ServiceTests.testGetPage" />
-      <item itemvalue="JUnit.ServiceTests.testUpdate" />
+      <item itemvalue="JUnit.ConfigurationTests" />
+      <item itemvalue="JUnit.PropertiesAndArgsTests" />
+      <item itemvalue="JUnit.WebTests" />
+      <item itemvalue="JUnit.WebTests.testConfiguration" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Springboot02BaseQuickstartApplication" />
@@ -301,15 +306,15 @@
       <item itemvalue="Spring Boot.Springboot08SsmpApplication" />
       <item itemvalue="Spring Boot.Springboot0101QuickstartApplication" />
       <item itemvalue="Spring Boot.Springboot01021QuickstartApplication" />
-      <item itemvalue="Spring Boot.ProfilesApplication" />
+      <item itemvalue="Spring Boot.Springboot14TestApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProfilesApplication" />
-        <item itemvalue="JUnit.IBookServiceTests.testUpdate" />
-        <item itemvalue="JUnit.IBookServiceTests" />
-        <item itemvalue="JUnit.ServiceTests.testGetPage" />
-        <item itemvalue="JUnit.ServiceTests.testUpdate" />
+        <item itemvalue="JUnit.WebTests.testConfiguration" />
+        <item itemvalue="JUnit.WebTests" />
+        <item itemvalue="Spring Boot.Springboot14TestApplication" />
+        <item itemvalue="JUnit.ConfigurationTests" />
+        <item itemvalue="JUnit.PropertiesAndArgsTests" />
       </list>
     </recent_temporary>
   </component>
@@ -322,6 +327,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringRepositoriesView">
+    <option name="showAllRepositoryMethods" value="true" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4b84cb11-4bc1-4d33-bc97-45f3dbb6be82" name="Changes" comment="" />
@@ -342,7 +350,7 @@
       <workItem from="1720139781373" duration="8279000" />
       <workItem from="1720405377510" duration="27899000" />
       <workItem from="1720528400146" duration="2897000" />
-      <workItem from="1720576681173" duration="381000" />
+      <workItem from="1720576681173" duration="20290000" />
     </task>
     <servers />
   </component>

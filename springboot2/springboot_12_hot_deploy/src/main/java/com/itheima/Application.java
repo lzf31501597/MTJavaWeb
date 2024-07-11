@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class Application {
 
 	public static void main(String[] args) {
+		System.setProperty("spring.devtools.restart.enabled", "false");
 		// System.out.println(Arrays.toString(args));
 
 		/* String[] strs = new String[1];

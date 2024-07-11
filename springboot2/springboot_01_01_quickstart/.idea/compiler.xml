@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot_12_hot_deploy" />
+        <module name="springboot_14_test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="springboot_09_config" target="1.8" />
       <module name="springboot_10_profiles" target="1.8" />
+      <module name="springboot_12_hot_deploy" target="1.8" />
+      <module name="springboot_13_configuration" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
