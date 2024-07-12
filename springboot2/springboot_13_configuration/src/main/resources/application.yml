@@ -1,0 +1,25 @@
+server:
+  port: 8080
+servers:
+  ipAddress: 192.168.0.1 #
+#  ip_address: 192.168.0.1 #
+#  ip-address: 192.168.0.1 #
+#  ipaddress: 192.168.0.1
+#  IPADDRESS: 192.168.0.1
+#  IP_ADDRESS: 192.168.0.1 #
+#  IP_ADD-R_E_SS: 192.168.0.1
+  port: 256
+  timeout: -1
+  serverTimeOut: 3
+  dataSize: 1024MB
+  host:
+    ipAddress: 192.168.0.1
+    port: 4567
+dataSource:
+  driverClassName: com.mysql.jdbc.Driver456
+  password: "0127"
+logging:
+  level:
+    root: info
+
+
