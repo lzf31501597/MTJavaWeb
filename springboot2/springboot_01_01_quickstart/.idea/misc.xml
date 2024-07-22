@@ -22,6 +22,11 @@
         <option value="$PROJECT_DIR$/../springboot_12_hot_deploy/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_13_configuration/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_14_test/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_15_sql/pom.xml" />
+        <option value="$PROJECT_DIR$/../pringboot_16_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_16_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_17_mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_18_es/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -40,6 +45,10 @@
         <option value="$PROJECT_DIR$/../springboot_10_profiles/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_12_hot_deploy/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_13_configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_14_test/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_15_sql/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_16_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_17_mongo/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
