@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b84cb11-4bc1-4d33-bc97-45f3dbb6be82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/src/main/java/com/itheima/Springboot18EsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/src/main/java/com/itheima/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_18_es/src/test/java/com/itheima/Springboot18EsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_19_cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_19_cache/src/main/java/com/itheima/Springboot19CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_19_cache/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_19_cache/src/test/java/com/itheima/Springboot19CacheApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../springboot_18_es" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../springboot_19_cache" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -98,6 +96,13 @@
     "JUnit.Springboot17MongoApplicationTests.testFind.executor": "Run",
     "JUnit.Springboot17MongoApplicationTests.testSave.executor": "Run",
     "JUnit.Springboot18EsApplicationTests.test.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testCreateClient.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testCreateDoc.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testCreateDocAll.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testCreateIndex.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testCreateIndexByIK.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testGet.executor": "Run",
+    "JUnit.Springboot18EsApplicationTests.testSearch.executor": "Run",
     "JUnit.StringRedisTemplateTest.executor": "Run",
     "JUnit.StringRedisTemplateTest.testStringRedisGet.executor": "Run",
     "JUnit.WebTests.executor": "Run",
@@ -140,7 +145,7 @@
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.6388889",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -170,56 +175,8 @@
       <recent name="com.itheima.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Springboot18EsApplicationTests.test">
-    <configuration name="Springboot17MongoApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_17_mongo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot17MongoApplicationTests" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot17MongoApplicationTests.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_17_mongo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot17MongoApplicationTests" />
-      <option name="METHOD_NAME" value="testFind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot17MongoApplicationTests.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_17_mongo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot17MongoApplicationTests" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot18EsApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Springboot18EsApplicationTests.testSearch">
+    <configuration name="Springboot18EsApplicationTests.testCreateDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_18_es" />
       <extension name="coverage">
         <pattern>
@@ -229,14 +186,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="testCreateDoc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringRedisTemplateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_16_redis" />
+    <configuration name="Springboot18EsApplicationTests.testCreateDocAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_18_es" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -244,8 +201,57 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.StringRedisTemplateTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
+      <option name="METHOD_NAME" value="testCreateDocAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot18EsApplicationTests.testCreateIndexByIK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_18_es" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
+      <option name="METHOD_NAME" value="testCreateIndexByIK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot18EsApplicationTests.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_18_es" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot18EsApplicationTests.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_18_es" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
+      <option name="METHOD_NAME" value="testSearch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -323,11 +329,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Springboot17MongoApplicationTests.test" />
-      <item itemvalue="JUnit.Springboot17MongoApplicationTests.testFind" />
-      <item itemvalue="JUnit.Springboot17MongoApplicationTests.testSave" />
-      <item itemvalue="JUnit.Springboot18EsApplicationTests.test" />
-      <item itemvalue="JUnit.StringRedisTemplateTest" />
+      <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateDoc" />
+      <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateDocAll" />
+      <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateIndexByIK" />
+      <item itemvalue="JUnit.Springboot18EsApplicationTests.testGet" />
+      <item itemvalue="JUnit.Springboot18EsApplicationTests.testSearch" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Springboot02BaseQuickstartApplication" />
@@ -338,11 +344,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Springboot18EsApplicationTests.test" />
-        <item itemvalue="JUnit.Springboot17MongoApplicationTests.testFind" />
-        <item itemvalue="JUnit.Springboot17MongoApplicationTests.testSave" />
-        <item itemvalue="JUnit.Springboot17MongoApplicationTests.test" />
-        <item itemvalue="JUnit.StringRedisTemplateTest" />
+        <item itemvalue="JUnit.Springboot18EsApplicationTests.testSearch" />
+        <item itemvalue="JUnit.Springboot18EsApplicationTests.testGet" />
+        <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateDocAll" />
+        <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateDoc" />
+        <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateIndexByIK" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +386,7 @@
       <workItem from="1720528400146" duration="2897000" />
       <workItem from="1720576681173" duration="39933000" />
       <workItem from="1721199399988" duration="14000" />
-      <workItem from="1721265136621" duration="16696000" />
+      <workItem from="1721265136621" duration="25486000" />
     </task>
     <servers />
   </component>
@@ -424,6 +430,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/../springboot_18_es/src/test/java/com/itheima/Springboot18EsApplicationTests.java</url>
+          <line>72</line>
+          <properties class="com.itheima.Springboot18EsApplicationTests" method="testCreateIndex">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/../springboot_18_es/src/test/java/com/itheima/Springboot18EsApplicationTests.java</url>
+          <line>157</line>
+          <properties class="com.itheima.Springboot18EsApplicationTests" method="testSearch">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
