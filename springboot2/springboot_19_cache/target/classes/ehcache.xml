@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd" updateCheck="false">
+    <diskStore path="/Users/dreamtank77/IdeaProjects/springboot2/springboot_19_cache/src/main/ehcache" />
+
+    <defaultCache
+        eternal="false"
+        diskPersistent="false"
+        maxElementsInMemory="1000"
+        overflowToDisk="false"
+        timeToIdleSeconds="60"
+        timeToLiveSeconds="60"
+        memoryStoreEvictionPolicy="LRU" />
+
+    <cache
+            name="smsCode"
+            eternal="false"
+            diskPersistent="false"
+            maxElementsInMemory="1000"
+            overflowToDisk="false"
+            timeToIdleSeconds="10"
+            timeToLiveSeconds="10"
+            memoryStoreEvictionPolicy="LRU" />
+</ehcache>

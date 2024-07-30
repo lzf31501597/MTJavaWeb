@@ -1,6 +1,7 @@
 package com.itheima.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 /**
  * @author
@@ -9,13 +10,14 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @description
  */
 //@TableName(value = "tb_book")
+@Data
 public class Book {
     private Integer id;
     private String type;
     private String name;
     private String description;
 
-    @Override
+   /*  @Override
     public String toString() {
         return "Book{" +
                 "id=" + id +
@@ -55,5 +57,5 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
-    }
+    } */
 }

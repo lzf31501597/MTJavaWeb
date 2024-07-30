@@ -1,9 +1,11 @@
 package com.itheima.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.itheima.dao.BookDao;
 import com.itheima.domain.Book;
-import com.itheima.service.IBookService;
+import com.itheima.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -15,16 +17,16 @@ import java.util.List;
  * @date 2024/06/27 18:01
  * @description
  */
-//@RestController
-@RequestMapping("/books1")
+@RestController
+@RequestMapping("/books")
 public class BookController {
 
     @Autowired
-    private IBookService bookService;
+    private BookService bookService;
 
     @GetMapping
     public List<Book> getAll(){
-        return bookService.list();
+        return bookService.getAll();
     }
 
     @PostMapping
@@ -34,12 +36,12 @@ public class BookController {
 
     @PutMapping
     public Boolean update(@RequestBody Book book){
-        return bookService.modify(book);
+        return bookService.update(book);
     }
 
     @DeleteMapping("{id}")
     public Boolean delete(@PathVariable Integer id){
-        return bookService.removeById(id);
+        return bookService.delete(id);
     }
 
     @GetMapping("{id}")
@@ -52,4 +54,6 @@ public class BookController {
         return bookService.getPage(currentPage, pageSize);
 
     }
+
+
 }
