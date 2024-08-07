@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot_20_jetcache" />
+        <module name="springboot_24_mq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -24,6 +24,10 @@
       <module name="springboot_17_mongo" target="1.8" />
       <module name="springboot_18_es" target="1.8" />
       <module name="springboot_19_cache" target="1.8" />
+      <module name="springboot_20_jetcache" target="1.8" />
+      <module name="springboot_21_j2cache" target="1.8" />
+      <module name="springboot_22_task" target="1.8" />
+      <module name="springboot_23_mail" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

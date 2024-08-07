@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b84cb11-4bc1-4d33-bc97-45f3dbb6be82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/Springboot20JetcacheApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/controller/SMSCodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/domain/SMSCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/service/SMSCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/service/impl/SMSCodeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima/utils/CodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot_20_jetcache/src/test/java/com/itheima/Springboot20JetcacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/Springboot24MqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot_24_mq/src/test/java/com/itheima/Springboot24MqApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../springboot_20_jetcache" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../springboot_24_mq" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -78,6 +75,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.CodeUtils.executor": "Run",
+    "Application.TimerTaskApp.executor": "Run",
     "JUnit.ApplicationTests.executor": "Run",
     "JUnit.ApplicationTests.testGetAll.executor": "Run",
     "JUnit.ApplicationTests.testGetBybook.executor": "Run",
@@ -115,6 +113,7 @@
     "JUnit.Springboot18EsApplicationTests.testCreateIndexByIK.executor": "Run",
     "JUnit.Springboot18EsApplicationTests.testGet.executor": "Run",
     "JUnit.Springboot18EsApplicationTests.testSearch.executor": "Run",
+    "JUnit.Springboot23MailApplicationTests.executor": "Run",
     "JUnit.StringRedisTemplateTest.executor": "Run",
     "JUnit.StringRedisTemplateTest.testStringRedisGet.executor": "Run",
     "JUnit.WebTests.executor": "Run",
@@ -130,6 +129,7 @@
     "Maven.springboot_09_config [clean].executor": "Run",
     "Maven.springboot_09_config [compile].executor": "Run",
     "Maven.springboot_09_config [package].executor": "Run",
+    "Maven.springboot_23_mail [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -149,9 +149,12 @@
     "Spring Boot.Springboot15SqlApplication.executor": "Run",
     "Spring Boot.Springboot19CacheApplication.executor": "Run",
     "Spring Boot.Springboot20JetcacheApplication.executor": "Run",
+    "Spring Boot.Springboot21J2cacheApplication.executor": "Run",
+    "Spring Boot.Springboot22TaskApplication.executor": "Run",
+    "Spring Boot.Springboot24MqApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springboot2/springboot_20_jetcache/src/main",
+    "last_opened_file_path": "/Users/dreamtank77/IdeaProjects/springboot2/springboot_21_j2cache/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -159,8 +162,8 @@
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.6388889",
     "run.configurations.included.in.services": "true",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -168,18 +171,18 @@
       <recent name="com.itheima.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../springboot_21_j2cache/src/main/resources" />
+      <recent name="$PROJECT_DIR$/../springboot_21_j2cache/src/main" />
+      <recent name="$PROJECT_DIR$/../springboot_21_j2cache/src/main/java/com/itheima" />
       <recent name="$PROJECT_DIR$/../springboot_20_jetcache/src/main" />
       <recent name="$PROJECT_DIR$/../springboot_20_jetcache" />
-      <recent name="$PROJECT_DIR$/../springboot_20_jetcache/src/main/java/com/itheima" />
-      <recent name="$PROJECT_DIR$/../springboot_19_cache/src/main/java/com/itheima/controller" />
-      <recent name="$PROJECT_DIR$/../springboot_19_cache/src/main/java/com/itheima" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../springboot_24_mq/src/main/java/com/itheima/service/impl" />
       <recent name="$PROJECT_DIR$/../springboot_19_cache/src/main/java/com/itheima" />
       <recent name="$PROJECT_DIR$/../springboot_17_mongo/src/main/resources" />
       <recent name="$PROJECT_DIR$/../springboot_10_profiles1/src/main/resources" />
       <recent name="$PROJECT_DIR$/../springboot_10_profiles/src/main/resources/props" />
-      <recent name="$PROJECT_DIR$/../springboot_10_profiles/src/main/resources/mul" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com" />
@@ -191,13 +194,13 @@
       <recent name="com.itheima.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Springboot20JetcacheApplication">
-    <configuration name="CodeUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.utils.CodeUtils" />
-      <module name="springboot_19_cache" />
+  <component name="RunManager" selected="Spring Boot.Springboot24MqApplication">
+    <configuration name="TimerTaskApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.TimerTaskApp" />
+      <module name="springboot_22_task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itheima.utils.*" />
+          <option name="PATTERN" value="com.itheima.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,34 +208,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Springboot18EsApplicationTests.testCreateIndexByIK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_18_es" />
+    <configuration name="Springboot23MailApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_23_mail" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
+          <option name="PATTERN" value="com.itheima.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
-      <option name="METHOD_NAME" value="testCreateIndexByIK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot18EsApplicationTests.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_18_es" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itheima" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot18EsApplicationTests" />
-      <option name="METHOD_NAME" value="testSearch" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.Springboot23MailApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -309,9 +295,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Springboot19CacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot_19_cache" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot19CacheApplication" />
+    <configuration name="Springboot21J2cacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot_21_j2cache" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot21J2cacheApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -322,9 +308,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Springboot20JetcacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot_20_jetcache" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot20JetcacheApplication" />
+    <configuration name="Springboot22TaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot_22_task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot22TaskApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot24MqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot_24_mq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot24MqApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -336,9 +335,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CodeUtils" />
-      <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateIndexByIK" />
-      <item itemvalue="JUnit.Springboot18EsApplicationTests.testSearch" />
+      <item itemvalue="Application.TimerTaskApp" />
+      <item itemvalue="JUnit.Springboot23MailApplicationTests" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Springboot02BaseQuickstartApplication" />
@@ -346,16 +344,17 @@
       <item itemvalue="Spring Boot.Springboot08SsmpApplication" />
       <item itemvalue="Spring Boot.Springboot0101QuickstartApplication" />
       <item itemvalue="Spring Boot.Springboot01021QuickstartApplication" />
-      <item itemvalue="Spring Boot.Springboot19CacheApplication" />
-      <item itemvalue="Spring Boot.Springboot20JetcacheApplication" />
+      <item itemvalue="Spring Boot.Springboot24MqApplication" />
+      <item itemvalue="Spring Boot.Springboot21J2cacheApplication" />
+      <item itemvalue="Spring Boot.Springboot22TaskApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Springboot20JetcacheApplication" />
-        <item itemvalue="Spring Boot.Springboot19CacheApplication" />
-        <item itemvalue="Application.CodeUtils" />
-        <item itemvalue="JUnit.Springboot18EsApplicationTests.testCreateIndexByIK" />
-        <item itemvalue="JUnit.Springboot18EsApplicationTests.testSearch" />
+        <item itemvalue="Spring Boot.Springboot24MqApplication" />
+        <item itemvalue="JUnit.Springboot23MailApplicationTests" />
+        <item itemvalue="Spring Boot.Springboot22TaskApplication" />
+        <item itemvalue="Application.TimerTaskApp" />
+        <item itemvalue="Spring Boot.Springboot21J2cacheApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +392,9 @@
       <workItem from="1720528400146" duration="2897000" />
       <workItem from="1720576681173" duration="39933000" />
       <workItem from="1721199399988" duration="14000" />
-      <workItem from="1721265136621" duration="71582000" />
+      <workItem from="1721265136621" duration="85677000" />
+      <workItem from="1722382416284" duration="13182000" />
+      <workItem from="1722576534252" duration="799000" />
     </task>
     <servers />
   </component>

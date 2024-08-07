@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/springboot_13_configuration" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_14_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_15_sql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_16_redis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_17_mongo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_18_es" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_21_j2cache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_22_task" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_23_mail" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot_24_mq" vcs="Git" />
+  </component>
+</project>

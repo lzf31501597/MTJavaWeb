@@ -1,0 +1,61 @@
+server:
+  port: 80
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: tb_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tmp?serverTimezone=UTC
+    username: root
+    password: 321321321
+
+
+  #jetcache
+jetcache:
+  statIntervalMinutes: 1
+  local:
+    default:
+      type: linkedhashmap
+      keyConvertor: fastjson
+
+  remote:
+    default:
+      type: redis
+      host: localhost
+      port: 6379
+      keyConvertor: fastjson
+      valueEncode: java
+      valueDecode: java
+      poolConfig:
+        maxTotal: 50
+    sms:
+      type: redis
+      host: localhost
+      port: 6379
+      poolConfig:
+        maxTotal: 50
+
+  #2-redis
+#  cache:
+#    type: redis
+#    redis:
+#      cache-null-values: false
+##      enable-statistics: true
+#      key-prefix: sms_
+#      use-key-prefix: false
+#      time-to-live: 10s
+#  redis:
+#    host: localhost
+#    port: 6379
+
